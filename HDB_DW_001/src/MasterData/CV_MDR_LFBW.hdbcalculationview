@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_LFBW" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Vendor master record (withholding tax types) "/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_LFBW">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_LFBW</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T059U">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T059U</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_LFA1">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_LFA1</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T001">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T001</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="BUKRS">
+        <descriptions defaultDescription="BUKRS"/>
+      </viewAttribute>
+      <viewAttribute id="WITHT">
+        <descriptions defaultDescription="WITHT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_SUBJCT">
+        <descriptions defaultDescription="WT_SUBJCT"/>
+      </viewAttribute>
+      <viewAttribute id="QSREC">
+        <descriptions defaultDescription="QSREC"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WTSTCD">
+        <descriptions defaultDescription="WT_WTSTCD"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WITHCD">
+        <descriptions defaultDescription="WT_WITHCD"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXNR">
+        <descriptions defaultDescription="WT_EXNR"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXRT">
+        <descriptions defaultDescription="WT_EXRT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXDF">
+        <descriptions defaultDescription="WT_EXDF"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXDT">
+        <descriptions defaultDescription="WT_EXDT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WTEXRS">
+        <descriptions defaultDescription="WT_WTEXRS"/>
+      </viewAttribute>
+      <viewAttribute id="TEXT40">
+        <descriptions defaultDescription="TEXT40"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_LFBW">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WITHT" source="WITHT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_SUBJCT" source="WT_SUBJCT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="QSREC" source="QSREC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WTSTCD" source="WT_WTSTCD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WITHCD" source="WT_WITHCD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXNR" source="WT_EXNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXRT" source="WT_EXRT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXDF" source="WT_EXDF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXDT" source="WT_EXDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WTEXRS" source="WT_WTEXRS"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T059U">
+      <mapping xsi:type="Calculation:AttributeMapping" target="TEXT40" source="TEXT40"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WITHT" source="WITHT"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="WITHT"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="BUKRS">
+        <descriptions defaultDescription="BUKRS"/>
+      </viewAttribute>
+      <viewAttribute id="WITHT">
+        <descriptions defaultDescription="WITHT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_SUBJCT">
+        <descriptions defaultDescription="WT_SUBJCT"/>
+      </viewAttribute>
+      <viewAttribute id="QSREC">
+        <descriptions defaultDescription="QSREC"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WTSTCD">
+        <descriptions defaultDescription="WT_WTSTCD"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WITHCD">
+        <descriptions defaultDescription="WT_WITHCD"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXNR">
+        <descriptions defaultDescription="WT_EXNR"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXRT">
+        <descriptions defaultDescription="WT_EXRT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXDF">
+        <descriptions defaultDescription="WT_EXDF"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXDT">
+        <descriptions defaultDescription="WT_EXDT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WTEXRS">
+        <descriptions defaultDescription="WT_WTEXRS"/>
+      </viewAttribute>
+      <viewAttribute id="TEXT40">
+        <descriptions defaultDescription="TEXT40"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WITHT" source="WITHT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_SUBJCT" source="WT_SUBJCT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="QSREC" source="QSREC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WTSTCD" source="WT_WTSTCD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WITHCD" source="WT_WITHCD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXNR" source="WT_EXNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXRT" source="WT_EXRT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXDF" source="WT_EXDF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXDT" source="WT_EXDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WTEXRS" source="WT_WTEXRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TEXT40" source="TEXT40"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_LFA1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="LIFNR"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_3" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="BUKRS">
+        <descriptions defaultDescription="BUKRS"/>
+      </viewAttribute>
+      <viewAttribute id="WITHT">
+        <descriptions defaultDescription="WITHT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_SUBJCT">
+        <descriptions defaultDescription="WT_SUBJCT"/>
+      </viewAttribute>
+      <viewAttribute id="QSREC">
+        <descriptions defaultDescription="QSREC"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WTSTCD">
+        <descriptions defaultDescription="WT_WTSTCD"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WITHCD">
+        <descriptions defaultDescription="WT_WITHCD"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXNR">
+        <descriptions defaultDescription="WT_EXNR"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXRT">
+        <descriptions defaultDescription="WT_EXRT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXDF">
+        <descriptions defaultDescription="WT_EXDF"/>
+      </viewAttribute>
+      <viewAttribute id="WT_EXDT">
+        <descriptions defaultDescription="WT_EXDT"/>
+      </viewAttribute>
+      <viewAttribute id="WT_WTEXRS">
+        <descriptions defaultDescription="WT_WTEXRS"/>
+      </viewAttribute>
+      <viewAttribute id="TEXT40">
+        <descriptions defaultDescription="TEXT40"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+      <viewAttribute id="BUTXT">
+        <descriptions defaultDescription="BUTXT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WITHT" source="WITHT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_SUBJCT" source="WT_SUBJCT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="QSREC" source="QSREC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WTSTCD" source="WT_WTSTCD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WITHCD" source="WT_WITHCD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXNR" source="WT_EXNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXRT" source="WT_EXRT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXDF" source="WT_EXDF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_EXDT" source="WT_EXDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WT_WTEXRS" source="WT_WTEXRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TEXT40" source="TEXT40"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T001">
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUTXT" source="BUTXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="BUKRS"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_3">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_3" columnName="MANDT"/>
+    </attribute>
+    <attribute id="LIFNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LIFNR"/>
+      <keyMapping columnObjectName="Join_3" columnName="LIFNR"/>
+    </attribute>
+    <attribute id="NAME1" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME1"/>
+      <keyMapping columnObjectName="Join_3" columnName="NAME1"/>
+    </attribute>
+    <attribute id="BUKRS" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS"/>
+      <keyMapping columnObjectName="Join_3" columnName="BUKRS"/>
+    </attribute>
+    <attribute id="BUTXT" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUTXT"/>
+      <keyMapping columnObjectName="Join_3" columnName="BUTXT"/>
+    </attribute>
+    <attribute id="WITHT" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WITHT"/>
+      <keyMapping columnObjectName="Join_3" columnName="WITHT"/>
+    </attribute>
+    <attribute id="TEXT40" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TEXT40"/>
+      <keyMapping columnObjectName="Join_3" columnName="TEXT40"/>
+    </attribute>
+    <attribute id="WT_SUBJCT" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_SUBJCT"/>
+      <keyMapping columnObjectName="Join_3" columnName="WT_SUBJCT"/>
+    </attribute>
+    <attribute id="QSREC" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="QSREC"/>
+      <keyMapping columnObjectName="Join_3" columnName="QSREC"/>
+    </attribute>
+    <attribute id="WT_WTSTCD" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_WTSTCD"/>
+      <keyMapping columnObjectName="Join_3" columnName="WT_WTSTCD"/>
+    </attribute>
+    <attribute id="WT_WITHCD" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_WITHCD"/>
+      <keyMapping columnObjectName="Join_3" columnName="WT_WITHCD"/>
+    </attribute>
+    <attribute id="WT_EXNR" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_EXNR"/>
+      <keyMapping columnObjectName="Join_3" columnName="WT_EXNR"/>
+    </attribute>
+    <attribute id="WT_EXRT" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_EXRT"/>
+      <keyMapping columnObjectName="Join_3" columnName="WT_EXRT"/>
+    </attribute>
+    <attribute id="WT_EXDF" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_EXDF"/>
+      <keyMapping columnObjectName="Join_3" columnName="WT_EXDF"/>
+    </attribute>
+    <attribute id="WT_EXDT" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_EXDT"/>
+      <keyMapping columnObjectName="Join_3" columnName="WT_EXDT"/>
+    </attribute>
+    <attribute id="WT_WTEXRS" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WT_WTEXRS"/>
+      <keyMapping columnObjectName="Join_3" columnName="WT_WTEXRS"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="90" y="460"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_LFBW" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T059U" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="80" y="317"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_LFA1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_3" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="70" y="209"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_2" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T001" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

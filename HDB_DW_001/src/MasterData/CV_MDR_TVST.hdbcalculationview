@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_TVST" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Organizational Unit: Shipping Points"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TVST">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TVST</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PRJ_DW_001.HDB_DW_001::Synonym_TVST">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="MANDT"/>
+    </attribute>
+    <attribute id="VSTEL" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VSTEL"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="VSTEL"/>
+    </attribute>
+    <attribute id="FABKL" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FABKL"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="FABKL"/>
+    </attribute>
+    <attribute id="VTRZT" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTRZT"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="VTRZT"/>
+    </attribute>
+    <attribute id="ADRNR" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADRNR"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="ADRNR"/>
+    </attribute>
+    <attribute id="ALAND" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ALAND"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="ALAND"/>
+    </attribute>
+    <attribute id="AZONE" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AZONE"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="AZONE"/>
+    </attribute>
+    <attribute id="TXNAM_ADR" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TXNAM_ADR"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="TXNAM_ADR"/>
+    </attribute>
+    <attribute id="TXNAM_KOP" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TXNAM_KOP"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="TXNAM_KOP"/>
+    </attribute>
+    <attribute id="TXNAM_FUS" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TXNAM_FUS"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="TXNAM_FUS"/>
+    </attribute>
+    <attribute id="TXNAM_GRU" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TXNAM_GRU"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="TXNAM_GRU"/>
+    </attribute>
+    <attribute id="KSCHL" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSCHL"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="KSCHL"/>
+    </attribute>
+    <attribute id="SPRAS" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SPRAS"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="SPRAS"/>
+    </attribute>
+    <attribute id="ANZAL" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANZAL"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="ANZAL"/>
+    </attribute>
+    <attribute id="VSZTP" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VSZTP"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="VSZTP"/>
+    </attribute>
+    <attribute id="NACHA" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NACHA"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="NACHA"/>
+    </attribute>
+    <attribute id="LAZBS" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAZBS"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="LAZBS"/>
+    </attribute>
+    <attribute id="RIZBS" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RIZBS"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="RIZBS"/>
+    </attribute>
+    <attribute id="LAZZT" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAZZT"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="LAZZT"/>
+    </attribute>
+    <attribute id="RIZZT" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RIZZT"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="RIZZT"/>
+    </attribute>
+    <attribute id="KOQUI" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOQUI"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="KOQUI"/>
+    </attribute>
+    <attribute id="KOMSU" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOMSU"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="KOMSU"/>
+    </attribute>
+    <attribute id="IMESS" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="IMESS"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="IMESS"/>
+    </attribute>
+    <attribute id="TXNAM_SDB" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TXNAM_SDB"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="TXNAM_SDB"/>
+    </attribute>
+    <attribute id="ALW_SW" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ALW_SW"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="ALW_SW"/>
+    </attribute>
+    <attribute id="LOADTG" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOADTG"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="LOADTG"/>
+    </attribute>
+    <attribute id="LOADTN" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOADTN"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="LOADTN"/>
+    </attribute>
+    <attribute id="PIPATG" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PIPATG"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="PIPATG"/>
+    </attribute>
+    <attribute id="PIPATN" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PIPATN"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="PIPATN"/>
+    </attribute>
+    <attribute id="TSTRID" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TSTRID"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="TSTRID"/>
+    </attribute>
+    <attribute id="ROUNDG" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ROUNDG"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="ROUNDG"/>
+    </attribute>
+    <attribute id="ROUNDN" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ROUNDN"/>
+      <keyMapping columnObjectName="Synonym_TVST" columnName="ROUNDN"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

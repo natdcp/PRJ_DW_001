@@ -1,0 +1,14 @@
+{
+	"DTD_HANA_REMOTE": {
+		"object_owner": { 
+			"roles": [
+				"SRC_ECC_SCHEMA::external_access_g"
+			]
+		},
+		"application_user": {
+			"roles": [
+				"SRC_ECC_SCHEMA::external_access"
+			]
+		}
+	}
+}

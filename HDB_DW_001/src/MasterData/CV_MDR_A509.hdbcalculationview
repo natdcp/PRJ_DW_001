@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_A509" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Customer"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_A509">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_A509</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T681B">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T681B</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T685T">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T685T</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_KNA1">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_KNA1</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_1" cardinality="CN_N" joinType="textTable" languageColumn="SPRAS" multiJoinNode="Join_1" multiJoinCentralTable="PRJ_DW_001.HDB_DW_001::Synonym_A509" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_A509">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T681B">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+    </input>
+    <joinAttribute name="KAPPL"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_2" cardinality="CN_N" joinType="textTable" languageColumn="SPRAS" multiJoinNode="Join_1" multiJoinCentralTable="PRJ_DW_001.HDB_DW_001::Synonym_A509" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T685T">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+    </input>
+    <joinAttribute name="KSCHL"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_3" cardinality="CN_N" joinType="leftOuter" multiJoinNode="Join_1" multiJoinCentralTable="PRJ_DW_001.HDB_DW_001::Synonym_A509" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+      <viewAttribute id="NAME2">
+        <descriptions defaultDescription="NAME2"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_KNA1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME2" source="NAME2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="KUNNR"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1_3">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="MANDT"/>
+    </attribute>
+    <attribute id="KAPPL" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAPPL"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="KAPPL"/>
+    </attribute>
+    <attribute id="KSCHL" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSCHL"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="KSCHL"/>
+    </attribute>
+    <attribute id="KUNNR" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUNNR"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="KUNNR"/>
+    </attribute>
+    <attribute id="KFRST" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KFRST"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="KFRST"/>
+    </attribute>
+    <attribute id="DATBI" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATBI"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="DATBI"/>
+    </attribute>
+    <attribute id="DATAB" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATAB"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="DATAB"/>
+    </attribute>
+    <attribute id="KBSTAT" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KBSTAT"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="KBSTAT"/>
+    </attribute>
+    <attribute id="KNUMH" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KNUMH"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="KNUMH"/>
+    </attribute>
+    <attribute id="NAME1" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME1"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="NAME1"/>
+    </attribute>
+    <attribute id="NAME2" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME2"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="NAME2"/>
+    </attribute>
+    <attribute id="VTEXT" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="VTEXT"/>
+    </attribute>
+    <attribute id="VTEXT_1" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_1"/>
+      <keyMapping columnObjectName="Join_1_3" columnName="VTEXT_1"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="121" y="193"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_A509" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_KNA1" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T681B" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="620" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T685T" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="920" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

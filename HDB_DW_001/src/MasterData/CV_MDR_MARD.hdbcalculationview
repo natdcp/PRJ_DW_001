@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_MARD" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Storage Location Data for Material"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_MARD">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_MARD</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_MAKT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_MAKT</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T001W">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T001W</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T001L">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T001L</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="WERKS">
+        <descriptions defaultDescription="WERKS"/>
+      </viewAttribute>
+      <viewAttribute id="LGORT">
+        <descriptions defaultDescription="LGORT"/>
+      </viewAttribute>
+      <viewAttribute id="PSTAT">
+        <descriptions defaultDescription="PSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="LVORM">
+        <descriptions defaultDescription="LVORM"/>
+      </viewAttribute>
+      <viewAttribute id="LFGJA">
+        <descriptions defaultDescription="LFGJA"/>
+      </viewAttribute>
+      <viewAttribute id="LFMON">
+        <descriptions defaultDescription="LFMON"/>
+      </viewAttribute>
+      <viewAttribute id="SPERR">
+        <descriptions defaultDescription="SPERR"/>
+      </viewAttribute>
+      <viewAttribute id="LABST">
+        <descriptions defaultDescription="LABST"/>
+      </viewAttribute>
+      <viewAttribute id="UMLME">
+        <descriptions defaultDescription="UMLME"/>
+      </viewAttribute>
+      <viewAttribute id="INSME">
+        <descriptions defaultDescription="INSME"/>
+      </viewAttribute>
+      <viewAttribute id="EINME">
+        <descriptions defaultDescription="EINME"/>
+      </viewAttribute>
+      <viewAttribute id="SPEME">
+        <descriptions defaultDescription="SPEME"/>
+      </viewAttribute>
+      <viewAttribute id="RETME">
+        <descriptions defaultDescription="RETME"/>
+      </viewAttribute>
+      <viewAttribute id="VMLAB">
+        <descriptions defaultDescription="VMLAB"/>
+      </viewAttribute>
+      <viewAttribute id="VMUML">
+        <descriptions defaultDescription="VMUML"/>
+      </viewAttribute>
+      <viewAttribute id="VMINS">
+        <descriptions defaultDescription="VMINS"/>
+      </viewAttribute>
+      <viewAttribute id="VMEIN">
+        <descriptions defaultDescription="VMEIN"/>
+      </viewAttribute>
+      <viewAttribute id="VMSPE">
+        <descriptions defaultDescription="VMSPE"/>
+      </viewAttribute>
+      <viewAttribute id="VMRET">
+        <descriptions defaultDescription="VMRET"/>
+      </viewAttribute>
+      <viewAttribute id="KZILL">
+        <descriptions defaultDescription="KZILL"/>
+      </viewAttribute>
+      <viewAttribute id="KZILQ">
+        <descriptions defaultDescription="KZILQ"/>
+      </viewAttribute>
+      <viewAttribute id="KZILE">
+        <descriptions defaultDescription="KZILE"/>
+      </viewAttribute>
+      <viewAttribute id="KZILS">
+        <descriptions defaultDescription="KZILS"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLL">
+        <descriptions defaultDescription="KZVLL"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLQ">
+        <descriptions defaultDescription="KZVLQ"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLE">
+        <descriptions defaultDescription="KZVLE"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLS">
+        <descriptions defaultDescription="KZVLS"/>
+      </viewAttribute>
+      <viewAttribute id="DISKZ">
+        <descriptions defaultDescription="DISKZ"/>
+      </viewAttribute>
+      <viewAttribute id="LSOBS">
+        <descriptions defaultDescription="LSOBS"/>
+      </viewAttribute>
+      <viewAttribute id="LMINB">
+        <descriptions defaultDescription="LMINB"/>
+      </viewAttribute>
+      <viewAttribute id="LBSTF">
+        <descriptions defaultDescription="LBSTF"/>
+      </viewAttribute>
+      <viewAttribute id="HERKL">
+        <descriptions defaultDescription="HERKL"/>
+      </viewAttribute>
+      <viewAttribute id="EXPPG">
+        <descriptions defaultDescription="EXPPG"/>
+      </viewAttribute>
+      <viewAttribute id="EXVER">
+        <descriptions defaultDescription="EXVER"/>
+      </viewAttribute>
+      <viewAttribute id="LGPBE">
+        <descriptions defaultDescription="LGPBE"/>
+      </viewAttribute>
+      <viewAttribute id="KLABS">
+        <descriptions defaultDescription="KLABS"/>
+      </viewAttribute>
+      <viewAttribute id="KINSM">
+        <descriptions defaultDescription="KINSM"/>
+      </viewAttribute>
+      <viewAttribute id="KEINM">
+        <descriptions defaultDescription="KEINM"/>
+      </viewAttribute>
+      <viewAttribute id="KSPEM">
+        <descriptions defaultDescription="KSPEM"/>
+      </viewAttribute>
+      <viewAttribute id="DLINL">
+        <descriptions defaultDescription="DLINL"/>
+      </viewAttribute>
+      <viewAttribute id="PRCTL">
+        <descriptions defaultDescription="PRCTL"/>
+      </viewAttribute>
+      <viewAttribute id="ERSDA">
+        <descriptions defaultDescription="ERSDA"/>
+      </viewAttribute>
+      <viewAttribute id="VKLAB">
+        <descriptions defaultDescription="VKLAB"/>
+      </viewAttribute>
+      <viewAttribute id="VKUML">
+        <descriptions defaultDescription="VKUML"/>
+      </viewAttribute>
+      <viewAttribute id="LWMKB">
+        <descriptions defaultDescription="LWMKB"/>
+      </viewAttribute>
+      <viewAttribute id="BSKRF">
+        <descriptions defaultDescription="BSKRF"/>
+      </viewAttribute>
+      <viewAttribute id="MDRUE">
+        <descriptions defaultDescription="MDRUE"/>
+      </viewAttribute>
+      <viewAttribute id="MDJIN">
+        <descriptions defaultDescription="MDJIN"/>
+      </viewAttribute>
+      <viewAttribute id="MAKTX">
+        <descriptions defaultDescription="MAKTX"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_MARD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WERKS" source="WERKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LGORT" source="LGORT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTAT" source="PSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LVORM" source="LVORM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LFGJA" source="LFGJA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LFMON" source="LFMON"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPERR" source="SPERR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LABST" source="LABST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="UMLME" source="UMLME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INSME" source="INSME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EINME" source="EINME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPEME" source="SPEME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="RETME" source="RETME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMLAB" source="VMLAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMUML" source="VMUML"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMINS" source="VMINS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMEIN" source="VMEIN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMSPE" source="VMSPE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMRET" source="VMRET"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILL" source="KZILL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILQ" source="KZILQ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILE" source="KZILE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILS" source="KZILS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLL" source="KZVLL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLQ" source="KZVLQ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLE" source="KZVLE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLS" source="KZVLS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DISKZ" source="DISKZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSOBS" source="LSOBS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LMINB" source="LMINB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LBSTF" source="LBSTF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HERKL" source="HERKL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EXPPG" source="EXPPG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EXVER" source="EXVER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LGPBE" source="LGPBE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KLABS" source="KLABS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KINSM" source="KINSM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KEINM" source="KEINM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSPEM" source="KSPEM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DLINL" source="DLINL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRCTL" source="PRCTL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ERSDA" source="ERSDA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKLAB" source="VKLAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKUML" source="VKUML"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LWMKB" source="LWMKB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BSKRF" source="BSKRF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MDRUE" source="MDRUE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MDJIN" source="MDJIN"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_MAKT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAKTX" source="MAKTX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="MATNR"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="WERKS">
+        <descriptions defaultDescription="WERKS"/>
+      </viewAttribute>
+      <viewAttribute id="LGORT">
+        <descriptions defaultDescription="LGORT"/>
+      </viewAttribute>
+      <viewAttribute id="PSTAT">
+        <descriptions defaultDescription="PSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="LVORM">
+        <descriptions defaultDescription="LVORM"/>
+      </viewAttribute>
+      <viewAttribute id="LFGJA">
+        <descriptions defaultDescription="LFGJA"/>
+      </viewAttribute>
+      <viewAttribute id="LFMON">
+        <descriptions defaultDescription="LFMON"/>
+      </viewAttribute>
+      <viewAttribute id="SPERR">
+        <descriptions defaultDescription="SPERR"/>
+      </viewAttribute>
+      <viewAttribute id="LABST">
+        <descriptions defaultDescription="LABST"/>
+      </viewAttribute>
+      <viewAttribute id="UMLME">
+        <descriptions defaultDescription="UMLME"/>
+      </viewAttribute>
+      <viewAttribute id="INSME">
+        <descriptions defaultDescription="INSME"/>
+      </viewAttribute>
+      <viewAttribute id="EINME">
+        <descriptions defaultDescription="EINME"/>
+      </viewAttribute>
+      <viewAttribute id="SPEME">
+        <descriptions defaultDescription="SPEME"/>
+      </viewAttribute>
+      <viewAttribute id="RETME">
+        <descriptions defaultDescription="RETME"/>
+      </viewAttribute>
+      <viewAttribute id="VMLAB">
+        <descriptions defaultDescription="VMLAB"/>
+      </viewAttribute>
+      <viewAttribute id="VMUML">
+        <descriptions defaultDescription="VMUML"/>
+      </viewAttribute>
+      <viewAttribute id="VMINS">
+        <descriptions defaultDescription="VMINS"/>
+      </viewAttribute>
+      <viewAttribute id="VMEIN">
+        <descriptions defaultDescription="VMEIN"/>
+      </viewAttribute>
+      <viewAttribute id="VMSPE">
+        <descriptions defaultDescription="VMSPE"/>
+      </viewAttribute>
+      <viewAttribute id="VMRET">
+        <descriptions defaultDescription="VMRET"/>
+      </viewAttribute>
+      <viewAttribute id="KZILL">
+        <descriptions defaultDescription="KZILL"/>
+      </viewAttribute>
+      <viewAttribute id="KZILQ">
+        <descriptions defaultDescription="KZILQ"/>
+      </viewAttribute>
+      <viewAttribute id="KZILE">
+        <descriptions defaultDescription="KZILE"/>
+      </viewAttribute>
+      <viewAttribute id="KZILS">
+        <descriptions defaultDescription="KZILS"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLL">
+        <descriptions defaultDescription="KZVLL"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLQ">
+        <descriptions defaultDescription="KZVLQ"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLE">
+        <descriptions defaultDescription="KZVLE"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLS">
+        <descriptions defaultDescription="KZVLS"/>
+      </viewAttribute>
+      <viewAttribute id="DISKZ">
+        <descriptions defaultDescription="DISKZ"/>
+      </viewAttribute>
+      <viewAttribute id="LSOBS">
+        <descriptions defaultDescription="LSOBS"/>
+      </viewAttribute>
+      <viewAttribute id="LMINB">
+        <descriptions defaultDescription="LMINB"/>
+      </viewAttribute>
+      <viewAttribute id="LBSTF">
+        <descriptions defaultDescription="LBSTF"/>
+      </viewAttribute>
+      <viewAttribute id="HERKL">
+        <descriptions defaultDescription="HERKL"/>
+      </viewAttribute>
+      <viewAttribute id="EXPPG">
+        <descriptions defaultDescription="EXPPG"/>
+      </viewAttribute>
+      <viewAttribute id="EXVER">
+        <descriptions defaultDescription="EXVER"/>
+      </viewAttribute>
+      <viewAttribute id="LGPBE">
+        <descriptions defaultDescription="LGPBE"/>
+      </viewAttribute>
+      <viewAttribute id="KLABS">
+        <descriptions defaultDescription="KLABS"/>
+      </viewAttribute>
+      <viewAttribute id="KINSM">
+        <descriptions defaultDescription="KINSM"/>
+      </viewAttribute>
+      <viewAttribute id="KEINM">
+        <descriptions defaultDescription="KEINM"/>
+      </viewAttribute>
+      <viewAttribute id="KSPEM">
+        <descriptions defaultDescription="KSPEM"/>
+      </viewAttribute>
+      <viewAttribute id="DLINL">
+        <descriptions defaultDescription="DLINL"/>
+      </viewAttribute>
+      <viewAttribute id="PRCTL">
+        <descriptions defaultDescription="PRCTL"/>
+      </viewAttribute>
+      <viewAttribute id="ERSDA">
+        <descriptions defaultDescription="ERSDA"/>
+      </viewAttribute>
+      <viewAttribute id="VKLAB">
+        <descriptions defaultDescription="VKLAB"/>
+      </viewAttribute>
+      <viewAttribute id="VKUML">
+        <descriptions defaultDescription="VKUML"/>
+      </viewAttribute>
+      <viewAttribute id="LWMKB">
+        <descriptions defaultDescription="LWMKB"/>
+      </viewAttribute>
+      <viewAttribute id="BSKRF">
+        <descriptions defaultDescription="BSKRF"/>
+      </viewAttribute>
+      <viewAttribute id="MDRUE">
+        <descriptions defaultDescription="MDRUE"/>
+      </viewAttribute>
+      <viewAttribute id="MDJIN">
+        <descriptions defaultDescription="MDJIN"/>
+      </viewAttribute>
+      <viewAttribute id="MAKTX">
+        <descriptions defaultDescription="MAKTX"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WERKS" source="WERKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LGORT" source="LGORT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTAT" source="PSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LVORM" source="LVORM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LFGJA" source="LFGJA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LFMON" source="LFMON"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPERR" source="SPERR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LABST" source="LABST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="UMLME" source="UMLME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INSME" source="INSME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EINME" source="EINME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPEME" source="SPEME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="RETME" source="RETME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMLAB" source="VMLAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMUML" source="VMUML"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMINS" source="VMINS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMEIN" source="VMEIN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMSPE" source="VMSPE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMRET" source="VMRET"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILL" source="KZILL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILQ" source="KZILQ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILE" source="KZILE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILS" source="KZILS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLL" source="KZVLL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLQ" source="KZVLQ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLE" source="KZVLE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLS" source="KZVLS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DISKZ" source="DISKZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSOBS" source="LSOBS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LMINB" source="LMINB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LBSTF" source="LBSTF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HERKL" source="HERKL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EXPPG" source="EXPPG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EXVER" source="EXVER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LGPBE" source="LGPBE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KLABS" source="KLABS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KINSM" source="KINSM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KEINM" source="KEINM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSPEM" source="KSPEM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DLINL" source="DLINL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRCTL" source="PRCTL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ERSDA" source="ERSDA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKLAB" source="VKLAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKUML" source="VKUML"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LWMKB" source="LWMKB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BSKRF" source="BSKRF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MDRUE" source="MDRUE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MDJIN" source="MDJIN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAKTX" source="MAKTX"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T001W">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WERKS" source="WERKS"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="WERKS"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_3" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="WERKS">
+        <descriptions defaultDescription="WERKS"/>
+      </viewAttribute>
+      <viewAttribute id="LGORT">
+        <descriptions defaultDescription="LGORT"/>
+      </viewAttribute>
+      <viewAttribute id="PSTAT">
+        <descriptions defaultDescription="PSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="LVORM">
+        <descriptions defaultDescription="LVORM"/>
+      </viewAttribute>
+      <viewAttribute id="LFGJA">
+        <descriptions defaultDescription="LFGJA"/>
+      </viewAttribute>
+      <viewAttribute id="LFMON">
+        <descriptions defaultDescription="LFMON"/>
+      </viewAttribute>
+      <viewAttribute id="SPERR">
+        <descriptions defaultDescription="SPERR"/>
+      </viewAttribute>
+      <viewAttribute id="LABST">
+        <descriptions defaultDescription="LABST"/>
+      </viewAttribute>
+      <viewAttribute id="UMLME">
+        <descriptions defaultDescription="UMLME"/>
+      </viewAttribute>
+      <viewAttribute id="INSME">
+        <descriptions defaultDescription="INSME"/>
+      </viewAttribute>
+      <viewAttribute id="EINME">
+        <descriptions defaultDescription="EINME"/>
+      </viewAttribute>
+      <viewAttribute id="SPEME">
+        <descriptions defaultDescription="SPEME"/>
+      </viewAttribute>
+      <viewAttribute id="RETME">
+        <descriptions defaultDescription="RETME"/>
+      </viewAttribute>
+      <viewAttribute id="VMLAB">
+        <descriptions defaultDescription="VMLAB"/>
+      </viewAttribute>
+      <viewAttribute id="VMUML">
+        <descriptions defaultDescription="VMUML"/>
+      </viewAttribute>
+      <viewAttribute id="VMINS">
+        <descriptions defaultDescription="VMINS"/>
+      </viewAttribute>
+      <viewAttribute id="VMEIN">
+        <descriptions defaultDescription="VMEIN"/>
+      </viewAttribute>
+      <viewAttribute id="VMSPE">
+        <descriptions defaultDescription="VMSPE"/>
+      </viewAttribute>
+      <viewAttribute id="VMRET">
+        <descriptions defaultDescription="VMRET"/>
+      </viewAttribute>
+      <viewAttribute id="KZILL">
+        <descriptions defaultDescription="KZILL"/>
+      </viewAttribute>
+      <viewAttribute id="KZILQ">
+        <descriptions defaultDescription="KZILQ"/>
+      </viewAttribute>
+      <viewAttribute id="KZILE">
+        <descriptions defaultDescription="KZILE"/>
+      </viewAttribute>
+      <viewAttribute id="KZILS">
+        <descriptions defaultDescription="KZILS"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLL">
+        <descriptions defaultDescription="KZVLL"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLQ">
+        <descriptions defaultDescription="KZVLQ"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLE">
+        <descriptions defaultDescription="KZVLE"/>
+      </viewAttribute>
+      <viewAttribute id="KZVLS">
+        <descriptions defaultDescription="KZVLS"/>
+      </viewAttribute>
+      <viewAttribute id="DISKZ">
+        <descriptions defaultDescription="DISKZ"/>
+      </viewAttribute>
+      <viewAttribute id="LSOBS">
+        <descriptions defaultDescription="LSOBS"/>
+      </viewAttribute>
+      <viewAttribute id="LMINB">
+        <descriptions defaultDescription="LMINB"/>
+      </viewAttribute>
+      <viewAttribute id="LBSTF">
+        <descriptions defaultDescription="LBSTF"/>
+      </viewAttribute>
+      <viewAttribute id="HERKL">
+        <descriptions defaultDescription="HERKL"/>
+      </viewAttribute>
+      <viewAttribute id="EXPPG">
+        <descriptions defaultDescription="EXPPG"/>
+      </viewAttribute>
+      <viewAttribute id="EXVER">
+        <descriptions defaultDescription="EXVER"/>
+      </viewAttribute>
+      <viewAttribute id="LGPBE">
+        <descriptions defaultDescription="LGPBE"/>
+      </viewAttribute>
+      <viewAttribute id="KLABS">
+        <descriptions defaultDescription="KLABS"/>
+      </viewAttribute>
+      <viewAttribute id="KINSM">
+        <descriptions defaultDescription="KINSM"/>
+      </viewAttribute>
+      <viewAttribute id="KEINM">
+        <descriptions defaultDescription="KEINM"/>
+      </viewAttribute>
+      <viewAttribute id="KSPEM">
+        <descriptions defaultDescription="KSPEM"/>
+      </viewAttribute>
+      <viewAttribute id="DLINL">
+        <descriptions defaultDescription="DLINL"/>
+      </viewAttribute>
+      <viewAttribute id="PRCTL">
+        <descriptions defaultDescription="PRCTL"/>
+      </viewAttribute>
+      <viewAttribute id="ERSDA">
+        <descriptions defaultDescription="ERSDA"/>
+      </viewAttribute>
+      <viewAttribute id="VKLAB">
+        <descriptions defaultDescription="VKLAB"/>
+      </viewAttribute>
+      <viewAttribute id="VKUML">
+        <descriptions defaultDescription="VKUML"/>
+      </viewAttribute>
+      <viewAttribute id="LWMKB">
+        <descriptions defaultDescription="LWMKB"/>
+      </viewAttribute>
+      <viewAttribute id="BSKRF">
+        <descriptions defaultDescription="BSKRF"/>
+      </viewAttribute>
+      <viewAttribute id="MDRUE">
+        <descriptions defaultDescription="MDRUE"/>
+      </viewAttribute>
+      <viewAttribute id="MDJIN">
+        <descriptions defaultDescription="MDJIN"/>
+      </viewAttribute>
+      <viewAttribute id="MAKTX">
+        <descriptions defaultDescription="MAKTX"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+      <viewAttribute id="LGOBE">
+        <descriptions defaultDescription="LGOBE"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WERKS" source="WERKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LGORT" source="LGORT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTAT" source="PSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LVORM" source="LVORM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LFGJA" source="LFGJA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LFMON" source="LFMON"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPERR" source="SPERR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LABST" source="LABST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="UMLME" source="UMLME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INSME" source="INSME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EINME" source="EINME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPEME" source="SPEME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="RETME" source="RETME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMLAB" source="VMLAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMUML" source="VMUML"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMINS" source="VMINS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMEIN" source="VMEIN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMSPE" source="VMSPE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VMRET" source="VMRET"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILL" source="KZILL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILQ" source="KZILQ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILE" source="KZILE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZILS" source="KZILS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLL" source="KZVLL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLQ" source="KZVLQ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLE" source="KZVLE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZVLS" source="KZVLS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DISKZ" source="DISKZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSOBS" source="LSOBS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LMINB" source="LMINB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LBSTF" source="LBSTF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HERKL" source="HERKL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EXPPG" source="EXPPG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EXVER" source="EXVER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LGPBE" source="LGPBE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KLABS" source="KLABS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KINSM" source="KINSM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KEINM" source="KEINM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSPEM" source="KSPEM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DLINL" source="DLINL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRCTL" source="PRCTL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ERSDA" source="ERSDA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKLAB" source="VKLAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKUML" source="VKUML"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LWMKB" source="LWMKB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BSKRF" source="BSKRF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MDRUE" source="MDRUE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MDJIN" source="MDJIN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAKTX" source="MAKTX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T001L">
+      <mapping xsi:type="Calculation:AttributeMapping" target="LGOBE" source="LGOBE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LGORT" source="LGORT"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="LGORT"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_3">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_3" columnName="MANDT"/>
+    </attribute>
+    <attribute id="MATNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR"/>
+      <keyMapping columnObjectName="Join_3" columnName="MATNR"/>
+    </attribute>
+    <attribute id="MAKTX" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAKTX"/>
+      <keyMapping columnObjectName="Join_3" columnName="MAKTX"/>
+    </attribute>
+    <attribute id="WERKS" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WERKS"/>
+      <keyMapping columnObjectName="Join_3" columnName="WERKS"/>
+    </attribute>
+    <attribute id="NAME1" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME1"/>
+      <keyMapping columnObjectName="Join_3" columnName="NAME1"/>
+    </attribute>
+    <attribute id="LGORT" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LGORT"/>
+      <keyMapping columnObjectName="Join_3" columnName="LGORT"/>
+    </attribute>
+    <attribute id="LGOBE" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LGOBE"/>
+      <keyMapping columnObjectName="Join_3" columnName="LGOBE"/>
+    </attribute>
+    <attribute id="PSTAT" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSTAT"/>
+      <keyMapping columnObjectName="Join_3" columnName="PSTAT"/>
+    </attribute>
+    <attribute id="LVORM" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LVORM"/>
+      <keyMapping columnObjectName="Join_3" columnName="LVORM"/>
+    </attribute>
+    <attribute id="LFGJA" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LFGJA"/>
+      <keyMapping columnObjectName="Join_3" columnName="LFGJA"/>
+    </attribute>
+    <attribute id="LFMON" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LFMON"/>
+      <keyMapping columnObjectName="Join_3" columnName="LFMON"/>
+    </attribute>
+    <attribute id="SPERR" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SPERR"/>
+      <keyMapping columnObjectName="Join_3" columnName="SPERR"/>
+    </attribute>
+    <attribute id="LABST" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LABST"/>
+      <keyMapping columnObjectName="Join_3" columnName="LABST"/>
+    </attribute>
+    <attribute id="UMLME" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UMLME"/>
+      <keyMapping columnObjectName="Join_3" columnName="UMLME"/>
+    </attribute>
+    <attribute id="INSME" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INSME"/>
+      <keyMapping columnObjectName="Join_3" columnName="INSME"/>
+    </attribute>
+    <attribute id="EINME" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EINME"/>
+      <keyMapping columnObjectName="Join_3" columnName="EINME"/>
+    </attribute>
+    <attribute id="SPEME" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SPEME"/>
+      <keyMapping columnObjectName="Join_3" columnName="SPEME"/>
+    </attribute>
+    <attribute id="RETME" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RETME"/>
+      <keyMapping columnObjectName="Join_3" columnName="RETME"/>
+    </attribute>
+    <attribute id="VMLAB" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VMLAB"/>
+      <keyMapping columnObjectName="Join_3" columnName="VMLAB"/>
+    </attribute>
+    <attribute id="VMUML" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VMUML"/>
+      <keyMapping columnObjectName="Join_3" columnName="VMUML"/>
+    </attribute>
+    <attribute id="VMINS" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VMINS"/>
+      <keyMapping columnObjectName="Join_3" columnName="VMINS"/>
+    </attribute>
+    <attribute id="VMEIN" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VMEIN"/>
+      <keyMapping columnObjectName="Join_3" columnName="VMEIN"/>
+    </attribute>
+    <attribute id="VMSPE" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VMSPE"/>
+      <keyMapping columnObjectName="Join_3" columnName="VMSPE"/>
+    </attribute>
+    <attribute id="VMRET" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VMRET"/>
+      <keyMapping columnObjectName="Join_3" columnName="VMRET"/>
+    </attribute>
+    <attribute id="KZILL" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZILL"/>
+      <keyMapping columnObjectName="Join_3" columnName="KZILL"/>
+    </attribute>
+    <attribute id="KZILQ" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZILQ"/>
+      <keyMapping columnObjectName="Join_3" columnName="KZILQ"/>
+    </attribute>
+    <attribute id="KZILE" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZILE"/>
+      <keyMapping columnObjectName="Join_3" columnName="KZILE"/>
+    </attribute>
+    <attribute id="KZILS" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZILS"/>
+      <keyMapping columnObjectName="Join_3" columnName="KZILS"/>
+    </attribute>
+    <attribute id="KZVLL" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZVLL"/>
+      <keyMapping columnObjectName="Join_3" columnName="KZVLL"/>
+    </attribute>
+    <attribute id="KZVLQ" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZVLQ"/>
+      <keyMapping columnObjectName="Join_3" columnName="KZVLQ"/>
+    </attribute>
+    <attribute id="KZVLE" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZVLE"/>
+      <keyMapping columnObjectName="Join_3" columnName="KZVLE"/>
+    </attribute>
+    <attribute id="KZVLS" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZVLS"/>
+      <keyMapping columnObjectName="Join_3" columnName="KZVLS"/>
+    </attribute>
+    <attribute id="DISKZ" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DISKZ"/>
+      <keyMapping columnObjectName="Join_3" columnName="DISKZ"/>
+    </attribute>
+    <attribute id="LSOBS" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LSOBS"/>
+      <keyMapping columnObjectName="Join_3" columnName="LSOBS"/>
+    </attribute>
+    <attribute id="LMINB" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LMINB"/>
+      <keyMapping columnObjectName="Join_3" columnName="LMINB"/>
+    </attribute>
+    <attribute id="LBSTF" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LBSTF"/>
+      <keyMapping columnObjectName="Join_3" columnName="LBSTF"/>
+    </attribute>
+    <attribute id="HERKL" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HERKL"/>
+      <keyMapping columnObjectName="Join_3" columnName="HERKL"/>
+    </attribute>
+    <attribute id="EXPPG" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EXPPG"/>
+      <keyMapping columnObjectName="Join_3" columnName="EXPPG"/>
+    </attribute>
+    <attribute id="EXVER" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EXVER"/>
+      <keyMapping columnObjectName="Join_3" columnName="EXVER"/>
+    </attribute>
+    <attribute id="LGPBE" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LGPBE"/>
+      <keyMapping columnObjectName="Join_3" columnName="LGPBE"/>
+    </attribute>
+    <attribute id="KLABS" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KLABS"/>
+      <keyMapping columnObjectName="Join_3" columnName="KLABS"/>
+    </attribute>
+    <attribute id="KINSM" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KINSM"/>
+      <keyMapping columnObjectName="Join_3" columnName="KINSM"/>
+    </attribute>
+    <attribute id="KEINM" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KEINM"/>
+      <keyMapping columnObjectName="Join_3" columnName="KEINM"/>
+    </attribute>
+    <attribute id="KSPEM" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSPEM"/>
+      <keyMapping columnObjectName="Join_3" columnName="KSPEM"/>
+    </attribute>
+    <attribute id="DLINL" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DLINL"/>
+      <keyMapping columnObjectName="Join_3" columnName="DLINL"/>
+    </attribute>
+    <attribute id="PRCTL" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRCTL"/>
+      <keyMapping columnObjectName="Join_3" columnName="PRCTL"/>
+    </attribute>
+    <attribute id="ERSDA" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ERSDA"/>
+      <keyMapping columnObjectName="Join_3" columnName="ERSDA"/>
+    </attribute>
+    <attribute id="VKLAB" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VKLAB"/>
+      <keyMapping columnObjectName="Join_3" columnName="VKLAB"/>
+    </attribute>
+    <attribute id="VKUML" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VKUML"/>
+      <keyMapping columnObjectName="Join_3" columnName="VKUML"/>
+    </attribute>
+    <attribute id="LWMKB" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LWMKB"/>
+      <keyMapping columnObjectName="Join_3" columnName="LWMKB"/>
+    </attribute>
+    <attribute id="BSKRF" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BSKRF"/>
+      <keyMapping columnObjectName="Join_3" columnName="BSKRF"/>
+    </attribute>
+    <attribute id="MDRUE" order="52" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MDRUE"/>
+      <keyMapping columnObjectName="Join_3" columnName="MDRUE"/>
+    </attribute>
+    <attribute id="MDJIN" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MDJIN"/>
+      <keyMapping columnObjectName="Join_3" columnName="MDJIN"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="110" y="489"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_MARD" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_MAKT" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="110" y="340"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T001W" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_3" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="222"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_2" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T001L" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

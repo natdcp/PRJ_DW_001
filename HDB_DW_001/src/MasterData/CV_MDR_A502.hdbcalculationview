@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_A502" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Product Hierarchy"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_A502">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_A502</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T681B">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T681B</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T685T">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T685T</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TVKOT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TVKOT</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TVTWT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TVTWT</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T179T">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T179T</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TSPAT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TSPAT</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PRODH">
+        <descriptions defaultDescription="PRODH"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_A502">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODH" source="PRODH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T681B">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+    </input>
+    <joinAttribute name="KAPPL"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PRODH">
+        <descriptions defaultDescription="PRODH"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODH" source="PRODH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T685T">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="KSCHL"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_3" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PRODH">
+        <descriptions defaultDescription="PRODH"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_2">
+        <descriptions defaultDescription="VTEXT_2"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODH" source="PRODH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_TVKOT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_2" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="VKORG"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_4" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PRODH">
+        <descriptions defaultDescription="PRODH"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_2">
+        <descriptions defaultDescription="VTEXT_2"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_3">
+        <descriptions defaultDescription="VTEXT_3"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_3">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODH" source="PRODH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_2" source="VTEXT_2"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_TVTWT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_3" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="VTWEG"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_5" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PRODH">
+        <descriptions defaultDescription="PRODH"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_2">
+        <descriptions defaultDescription="VTEXT_2"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_3">
+        <descriptions defaultDescription="VTEXT_3"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_4">
+        <descriptions defaultDescription="VTEXT_4"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_4">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODH" source="PRODH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_2" source="VTEXT_2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_3" source="VTEXT_3"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T179T">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_4" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODH" source="PRODH"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="PRODH"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_6" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PRODH">
+        <descriptions defaultDescription="PRODH"/>
+      </viewAttribute>
+      <viewAttribute id="KFRST">
+        <descriptions defaultDescription="KFRST"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KBSTAT">
+        <descriptions defaultDescription="KBSTAT"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_2">
+        <descriptions defaultDescription="VTEXT_2"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_3">
+        <descriptions defaultDescription="VTEXT_3"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_4">
+        <descriptions defaultDescription="VTEXT_4"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_5">
+        <descriptions defaultDescription="VTEXT_5"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_5">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODH" source="PRODH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KFRST" source="KFRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KBSTAT" source="KBSTAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_2" source="VTEXT_2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_3" source="VTEXT_3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_4" source="VTEXT_4"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_TSPAT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_5" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="SPART"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_6">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_6" columnName="MANDT"/>
+    </attribute>
+    <attribute id="KAPPL" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAPPL"/>
+      <keyMapping columnObjectName="Join_6" columnName="KAPPL"/>
+    </attribute>
+    <attribute id="VTEXT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT"/>
+      <keyMapping columnObjectName="Join_6" columnName="VTEXT"/>
+    </attribute>
+    <attribute id="KSCHL" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSCHL"/>
+      <keyMapping columnObjectName="Join_6" columnName="KSCHL"/>
+    </attribute>
+    <attribute id="VTEXT_1" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_1"/>
+      <keyMapping columnObjectName="Join_6" columnName="VTEXT_1"/>
+    </attribute>
+    <attribute id="VKORG" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VKORG"/>
+      <keyMapping columnObjectName="Join_6" columnName="VKORG"/>
+    </attribute>
+    <attribute id="VTEXT_2" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_2"/>
+      <keyMapping columnObjectName="Join_6" columnName="VTEXT_2"/>
+    </attribute>
+    <attribute id="VTWEG" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTWEG"/>
+      <keyMapping columnObjectName="Join_6" columnName="VTWEG"/>
+    </attribute>
+    <attribute id="VTEXT_3" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_3"/>
+      <keyMapping columnObjectName="Join_6" columnName="VTEXT_3"/>
+    </attribute>
+    <attribute id="SPART" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SPART"/>
+      <keyMapping columnObjectName="Join_6" columnName="SPART"/>
+    </attribute>
+    <attribute id="VTEXT_5" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_5"/>
+      <keyMapping columnObjectName="Join_6" columnName="VTEXT_5"/>
+    </attribute>
+    <attribute id="PRODH" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODH"/>
+      <keyMapping columnObjectName="Join_6" columnName="PRODH"/>
+    </attribute>
+    <attribute id="VTEXT_4" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_4"/>
+      <keyMapping columnObjectName="Join_6" columnName="VTEXT_4"/>
+    </attribute>
+    <attribute id="KFRST" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KFRST"/>
+      <keyMapping columnObjectName="Join_6" columnName="KFRST"/>
+    </attribute>
+    <attribute id="DATBI" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATBI"/>
+      <keyMapping columnObjectName="Join_6" columnName="DATBI"/>
+    </attribute>
+    <attribute id="DATAB" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATAB"/>
+      <keyMapping columnObjectName="Join_6" columnName="DATAB"/>
+    </attribute>
+    <attribute id="KBSTAT" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KBSTAT"/>
+      <keyMapping columnObjectName="Join_6" columnName="KBSTAT"/>
+    </attribute>
+    <attribute id="KNUMH" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KNUMH"/>
+      <keyMapping columnObjectName="Join_6" columnName="KNUMH"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="150" y="1004"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_A502" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T681B" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="144" y="842"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T685T" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_3" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="147" y="661"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_2" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_TVKOT" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_4" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="150" y="487"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_3" modelObjectNameSpace="Join_4" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_TVTWT" modelObjectNameSpace="Join_4" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_5" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="118" y="310"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_4" modelObjectNameSpace="Join_5" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T179T" modelObjectNameSpace="Join_5" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_6" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="108" y="192"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_5" modelObjectNameSpace="Join_6" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_TSPAT" modelObjectNameSpace="Join_6" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

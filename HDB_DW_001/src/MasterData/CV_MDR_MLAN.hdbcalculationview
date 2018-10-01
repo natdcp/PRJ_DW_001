@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_MLAN" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Tax Classification for Material"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_MLAN">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_MLAN</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T005T">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T005T</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="ALAND">
+        <descriptions defaultDescription="ALAND"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM1">
+        <descriptions defaultDescription="TAXM1"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM2">
+        <descriptions defaultDescription="TAXM2"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM3">
+        <descriptions defaultDescription="TAXM3"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM4">
+        <descriptions defaultDescription="TAXM4"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM5">
+        <descriptions defaultDescription="TAXM5"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM6">
+        <descriptions defaultDescription="TAXM6"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM7">
+        <descriptions defaultDescription="TAXM7"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM8">
+        <descriptions defaultDescription="TAXM8"/>
+      </viewAttribute>
+      <viewAttribute id="TAXM9">
+        <descriptions defaultDescription="TAXM9"/>
+      </viewAttribute>
+      <viewAttribute id="TAXIM">
+        <descriptions defaultDescription="TAXIM"/>
+      </viewAttribute>
+      <viewAttribute id="MANDT_1">
+        <descriptions defaultDescription="MANDT_1"/>
+      </viewAttribute>
+      <viewAttribute id="SPRAS">
+        <descriptions defaultDescription="SPRAS"/>
+      </viewAttribute>
+      <viewAttribute id="LAND1">
+        <descriptions defaultDescription="LAND1"/>
+      </viewAttribute>
+      <viewAttribute id="LANDX">
+        <descriptions defaultDescription="LANDX"/>
+      </viewAttribute>
+      <viewAttribute id="NATIO">
+        <descriptions defaultDescription="NATIO"/>
+      </viewAttribute>
+      <viewAttribute id="LANDX50">
+        <descriptions defaultDescription="LANDX50"/>
+      </viewAttribute>
+      <viewAttribute id="NATIO50">
+        <descriptions defaultDescription="NATIO50"/>
+      </viewAttribute>
+      <viewAttribute id="PRQ_SPREGT">
+        <descriptions defaultDescription="PRQ_SPREGT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_MLAN">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ALAND" source="ALAND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM1" source="TAXM1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM2" source="TAXM2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM3" source="TAXM3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM4" source="TAXM4"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM5" source="TAXM5"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM6" source="TAXM6"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM7" source="TAXM7"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM8" source="TAXM8"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXM9" source="TAXM9"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXIM" source="TAXIM"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T005T">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT_1" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPRAS" source="SPRAS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LAND1" source="LAND1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LANDX" source="LANDX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NATIO" source="NATIO"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LANDX50" source="LANDX50"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NATIO50" source="NATIO50"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRQ_SPREGT" source="PRQ_SPREGT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ALAND" source="LAND1"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="ALAND"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_1" columnName="MANDT"/>
+    </attribute>
+    <attribute id="MATNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR"/>
+      <keyMapping columnObjectName="Join_1" columnName="MATNR"/>
+    </attribute>
+    <attribute id="ALAND" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ALAND"/>
+      <keyMapping columnObjectName="Join_1" columnName="ALAND"/>
+    </attribute>
+    <attribute id="TAXM1" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM1"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM1"/>
+    </attribute>
+    <attribute id="TAXM2" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM2"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM2"/>
+    </attribute>
+    <attribute id="TAXM3" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM3"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM3"/>
+    </attribute>
+    <attribute id="TAXM4" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM4"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM4"/>
+    </attribute>
+    <attribute id="TAXM5" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM5"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM5"/>
+    </attribute>
+    <attribute id="TAXM6" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM6"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM6"/>
+    </attribute>
+    <attribute id="TAXM7" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM7"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM7"/>
+    </attribute>
+    <attribute id="TAXM8" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM8"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM8"/>
+    </attribute>
+    <attribute id="TAXM9" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXM9"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXM9"/>
+    </attribute>
+    <attribute id="TAXIM" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXIM"/>
+      <keyMapping columnObjectName="Join_1" columnName="TAXIM"/>
+    </attribute>
+    <attribute id="MANDT_1" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT_1"/>
+      <keyMapping columnObjectName="Join_1" columnName="MANDT_1"/>
+    </attribute>
+    <attribute id="SPRAS" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SPRAS"/>
+      <keyMapping columnObjectName="Join_1" columnName="SPRAS"/>
+    </attribute>
+    <attribute id="LAND1" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAND1"/>
+      <keyMapping columnObjectName="Join_1" columnName="LAND1"/>
+    </attribute>
+    <attribute id="LANDX" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LANDX"/>
+      <keyMapping columnObjectName="Join_1" columnName="LANDX"/>
+    </attribute>
+    <attribute id="NATIO" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NATIO"/>
+      <keyMapping columnObjectName="Join_1" columnName="NATIO"/>
+    </attribute>
+    <attribute id="LANDX50" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LANDX50"/>
+      <keyMapping columnObjectName="Join_1" columnName="LANDX50"/>
+    </attribute>
+    <attribute id="NATIO50" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NATIO50"/>
+      <keyMapping columnObjectName="Join_1" columnName="NATIO50"/>
+    </attribute>
+    <attribute id="PRQ_SPREGT" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRQ_SPREGT"/>
+      <keyMapping columnObjectName="Join_1" columnName="PRQ_SPREGT"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="100" y="105"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="89" y="232"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_MLAN" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T005T" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

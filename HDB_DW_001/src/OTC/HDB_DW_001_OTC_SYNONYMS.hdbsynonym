@@ -1,0 +1,9 @@
+{
+  "PRJ_DW_001.HDB_DW_001::Synonym_VBAP": {
+    "target": {
+      "object": "VBAP",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  }
+}

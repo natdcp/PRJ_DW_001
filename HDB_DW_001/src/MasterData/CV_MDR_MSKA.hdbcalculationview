@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_MSKA" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Sales Order Stock"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_MSKA">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_MSKA</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PRJ_DW_001.HDB_DW_001::Synonym_MSKA">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="MANDT"/>
+    </attribute>
+    <attribute id="MATNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="MATNR"/>
+    </attribute>
+    <attribute id="WERKS" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WERKS"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="WERKS"/>
+    </attribute>
+    <attribute id="LGORT" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LGORT"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="LGORT"/>
+    </attribute>
+    <attribute id="CHARG" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CHARG"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="CHARG"/>
+    </attribute>
+    <attribute id="SOBKZ" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SOBKZ"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="SOBKZ"/>
+    </attribute>
+    <attribute id="VBELN" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VBELN"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="VBELN"/>
+    </attribute>
+    <attribute id="POSNR" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="POSNR"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="POSNR"/>
+    </attribute>
+    <attribute id="LFGJA" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LFGJA"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="LFGJA"/>
+    </attribute>
+    <attribute id="LFMON" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LFMON"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="LFMON"/>
+    </attribute>
+    <attribute id="KASPR" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KASPR"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KASPR"/>
+    </attribute>
+    <attribute id="KALAB" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KALAB"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KALAB"/>
+    </attribute>
+    <attribute id="KAINS" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAINS"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAINS"/>
+    </attribute>
+    <attribute id="KASPE" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KASPE"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KASPE"/>
+    </attribute>
+    <attribute id="KAVLA" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAVLA"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAVLA"/>
+    </attribute>
+    <attribute id="KAVIN" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAVIN"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAVIN"/>
+    </attribute>
+    <attribute id="KAVSP" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAVSP"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAVSP"/>
+    </attribute>
+    <attribute id="KAILL" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAILL"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAILL"/>
+    </attribute>
+    <attribute id="KAILQ" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAILQ"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAILQ"/>
+    </attribute>
+    <attribute id="KAILS" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAILS"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAILS"/>
+    </attribute>
+    <attribute id="KAVLL" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAVLL"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAVLL"/>
+    </attribute>
+    <attribute id="KAVLQ" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAVLQ"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAVLQ"/>
+    </attribute>
+    <attribute id="KAVLS" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAVLS"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAVLS"/>
+    </attribute>
+    <attribute id="KAFLL" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAFLL"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAFLL"/>
+    </attribute>
+    <attribute id="KAFLQ" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAFLQ"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAFLQ"/>
+    </attribute>
+    <attribute id="KAFLS" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAFLS"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAFLS"/>
+    </attribute>
+    <attribute id="KADLL" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KADLL"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KADLL"/>
+    </attribute>
+    <attribute id="KAEIN" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAEIN"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAEIN"/>
+    </attribute>
+    <attribute id="KAVEI" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAVEI"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAVEI"/>
+    </attribute>
+    <attribute id="ERSDA" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ERSDA"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="ERSDA"/>
+    </attribute>
+    <attribute id="KAJIN" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAJIN"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KAJIN"/>
+    </attribute>
+    <attribute id="KARUE" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KARUE"/>
+      <keyMapping columnObjectName="Synonym_MSKA" columnName="KARUE"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

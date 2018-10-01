@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_KOTD503" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="NDCP Region/Material"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_KOTD503">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_KOTD503</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T681B">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T681B</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T685T">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T685T</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T005U">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T005U</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_MAKT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_MAKT</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_1" cardinality="CN_N" joinType="textTable" languageColumn="SPRAS" multiJoinNode="Join_1" multiJoinCentralTable="PRJ_DW_001.HDB_DW_001::Synonym_KOTD503" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="REGIO">
+        <descriptions defaultDescription="REGIO"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_KOTD503">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REGIO" source="REGIO"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T681B">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+    </input>
+    <joinAttribute name="KAPPL"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_2" cardinality="CN_N" joinType="textTable" languageColumn="SPRAS" multiJoinNode="Join_1" multiJoinCentralTable="PRJ_DW_001.HDB_DW_001::Synonym_KOTD503" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="REGIO">
+        <descriptions defaultDescription="REGIO"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REGIO" source="REGIO"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T685T">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="KSCHL"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_3" cardinality="CN_N" joinType="textTable" languageColumn="SPRAS" multiJoinNode="Join_1" multiJoinCentralTable="PRJ_DW_001.HDB_DW_001::Synonym_KOTD503" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="REGIO">
+        <descriptions defaultDescription="REGIO"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+      <viewAttribute id="MANDT_1">
+        <descriptions defaultDescription="MANDT_1"/>
+      </viewAttribute>
+      <viewAttribute id="LAND1">
+        <descriptions defaultDescription="LAND1"/>
+      </viewAttribute>
+      <viewAttribute id="BEZEI">
+        <descriptions defaultDescription="BEZEI"/>
+      </viewAttribute>
+      <viewAttribute id="BEZEI_1">
+        <descriptions defaultDescription="BEZEI_1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REGIO" source="REGIO"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T005U">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT_1" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LAND1" source="LAND1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BEZEI" source="BEZEI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BEZEI_1" source="BEZEI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REGIO" source="BLAND"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="REGIO"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_4" cardinality="CN_N" joinType="textTable" languageColumn="SPRAS" multiJoinNode="Join_1" multiJoinCentralTable="PRJ_DW_001.HDB_DW_001::Synonym_KOTD503" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="MAKTX">
+        <descriptions defaultDescription="MAKTX"/>
+      </viewAttribute>
+      <viewAttribute id="MAKTG">
+        <descriptions defaultDescription="MAKTG"/>
+      </viewAttribute>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KAPPL">
+        <descriptions defaultDescription="KAPPL"/>
+      </viewAttribute>
+      <viewAttribute id="KSCHL">
+        <descriptions defaultDescription="KSCHL"/>
+      </viewAttribute>
+      <viewAttribute id="REGIO">
+        <descriptions defaultDescription="REGIO"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="DATBI">
+        <descriptions defaultDescription="DATBI"/>
+      </viewAttribute>
+      <viewAttribute id="DATAB">
+        <descriptions defaultDescription="DATAB"/>
+      </viewAttribute>
+      <viewAttribute id="KNUMH">
+        <descriptions defaultDescription="KNUMH"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+      <viewAttribute id="MANDT_1">
+        <descriptions defaultDescription="MANDT_1"/>
+      </viewAttribute>
+      <viewAttribute id="LAND1">
+        <descriptions defaultDescription="LAND1"/>
+      </viewAttribute>
+      <viewAttribute id="BEZEI">
+        <descriptions defaultDescription="BEZEI"/>
+      </viewAttribute>
+      <viewAttribute id="BEZEI_1">
+        <descriptions defaultDescription="BEZEI_1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1_3">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAPPL" source="KAPPL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSCHL" source="KSCHL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REGIO" source="REGIO"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATBI" source="DATBI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATAB" source="DATAB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNUMH" source="KNUMH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT_1" source="MANDT_1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LAND1" source="LAND1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BEZEI" source="BEZEI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BEZEI_1" source="BEZEI_1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_MAKT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAKTX" source="MAKTX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAKTG" source="MAKTG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="MATNR"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1_4">
+  <attributes>
+    <attribute id="MAKTX" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAKTX"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="MAKTX"/>
+    </attribute>
+    <attribute id="MAKTG" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAKTG"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="MAKTG"/>
+    </attribute>
+    <attribute id="MANDT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="MANDT"/>
+    </attribute>
+    <attribute id="KAPPL" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAPPL"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="KAPPL"/>
+    </attribute>
+    <attribute id="KSCHL" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSCHL"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="KSCHL"/>
+    </attribute>
+    <attribute id="REGIO" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REGIO"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="REGIO"/>
+    </attribute>
+    <attribute id="MATNR" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="MATNR"/>
+    </attribute>
+    <attribute id="DATBI" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATBI"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="DATBI"/>
+    </attribute>
+    <attribute id="DATAB" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATAB"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="DATAB"/>
+    </attribute>
+    <attribute id="KNUMH" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KNUMH"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="KNUMH"/>
+    </attribute>
+    <attribute id="VTEXT" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="VTEXT"/>
+    </attribute>
+    <attribute id="VTEXT_1" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_1"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="VTEXT_1"/>
+    </attribute>
+    <attribute id="MANDT_1" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT_1"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="MANDT_1"/>
+    </attribute>
+    <attribute id="LAND1" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAND1"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="LAND1"/>
+    </attribute>
+    <attribute id="BEZEI" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BEZEI"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="BEZEI"/>
+    </attribute>
+    <attribute id="BEZEI_1" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BEZEI_1"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="BEZEI_1"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="-126" y="159"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_MAKT" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_KOTD503" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T005U" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="620" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T681B" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="920" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T685T" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="1220" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

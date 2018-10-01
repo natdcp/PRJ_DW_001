@@ -1,0 +1,667 @@
+{
+  "PRJ_DW_001.HDB_DW_001::Synonym_CEPC": {
+    "target": {
+      "object": "CEPC",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MAKT": {
+    "target": {
+      "object": "MAKT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_CEPCT": {
+    "target": {
+      "object": "CEPCT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_CSKS": {
+    "target": {
+      "object": "CSKS",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_CSKT": {
+    "target": {
+      "object": "CSKT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_LFA1": {
+    "target": {
+      "object": "LFA1",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MCH1": {
+    "target": {
+      "object": "MCH1",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_SKA1": {
+    "target": {
+      "object": "SKA1",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_SKAT": {
+    "target": {
+      "object": "SKAT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T001T": {
+    "target": {
+      "object": "T001T",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T001TW": {
+    "target": {
+      "object": "T001W",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T001W": {
+    "target": {
+      "object": "T001W",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A005": {
+    "target": {
+      "object": "A005",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A017": {
+    "target": {
+      "object": "A017",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A053": {
+    "target": {
+      "object": "A053",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A511": {
+    "target": {
+      "object": "A511",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A512": {
+    "target": {
+      "object": "A512",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MSKA": {
+    "target": {
+      "object": "MSKA",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MVKE": {
+    "target": {
+      "object": "MVKE",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_TVST": {
+    "target": {
+      "object": "TVST",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_WYT3": {
+    "target": {
+      "object": "WYT3",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ADR6": {
+    "target": {
+      "object": "ADR6",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ADRC": {
+    "target": {
+      "object": "ADRC",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ANAT": {
+    "target": {
+      "object": "ANAT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ANKL": {
+    "target": {
+      "object": "ANKL",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ANKT": {
+    "target": {
+      "object": "ANKT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ADRP": {
+    "target": {
+      "object": "ADRP",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ANLA": {
+    "target": {
+      "object": "ANLA",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ANLB": {
+    "target": {
+      "object": "ANLB",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ANLC": {
+    "target": {
+      "object": "ANLC",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_ANLH": {
+    "target": {
+      "object": "ANLH",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_EORD": {
+    "target": {
+      "object": "EORD",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNB1": {
+    "target": {
+      "object": "KNB1",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNBK": {
+    "target": {
+      "object": "KNBK",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T005T": {
+    "target": {
+      "object": "T005T",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNVD": {
+    "target": {
+      "object": "KNVD",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNVH": {
+    "target": {
+      "object": "KNVH",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNVI": {
+    "target": {
+      "object": "KNVI",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNVK": {
+    "target": {
+      "object": "KNVK",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNVP": {
+    "target": {
+      "object": "KNVP",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNVV": {
+    "target": {
+      "object": "KNVV",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_THITT": {
+    "target": {
+      "object": "THITT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_TVKOT": {
+    "target": {
+      "object": "TVKOT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_TVTWT": {
+    "target": {
+      "object": "TVTWT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_TSPAT": {
+    "target": {
+      "object": "TSPAT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T685T": {
+    "target": {
+      "object": "T685T",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_TSKDT": {
+    "target": {
+      "object": "TSKDT",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_TPART": {
+    "target": {
+      "object": "TPART",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_LFB1": {
+    "target": {
+      "object": "LFB1",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T001": {
+    "target": {
+      "object": "T001",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KNA1": {
+    "target": {
+      "object": "KNA1",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_LFBK": {
+    "target": {
+      "object": "LFBK",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_LFBW": {
+    "target": {
+      "object": "LFBW",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T059U": {
+    "target": {
+      "object": "T059U",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_LFM1": {
+    "target": {
+      "object": "LFM1",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T024": {
+    "target": {
+      "object": "T024E",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T024E": {
+    "target": {
+      "object": "T024E",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_LFM2": {
+    "target": {
+      "object": "LFM2",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MAPR": {
+    "target": {
+      "object": "MAPR",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A501": {
+    "target": {
+      "object": "A501",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T179T": {
+    "target": {
+      "object": "T179T",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T681B": {
+    "target": {
+      "object": "T681B",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A502": {
+    "target": {
+      "object": "A502",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T188T": {
+    "target": {
+      "object": "T188T",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A503": {
+    "target": {
+      "object": "A503",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A504": {
+    "target": {
+      "object": "A504",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A505": {
+    "target": {
+      "object": "A505",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T005U": {
+    "target": {
+      "object": "T005U",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_TVM1T": {
+    "target": {
+      "object": "TVM1T",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T001L": {
+    "target": {
+      "object": "T001L",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MARD": {
+    "target": {
+      "object": "MARD",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KONP": {
+    "target": {
+      "object": "KONP",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T009": {
+    "target": {
+      "object": "T009",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A506": {
+    "target": {
+      "object": "A506",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A507": {
+    "target": {
+      "object": "A507",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A509": {
+    "target": {
+      "object": "A509",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_A510": {
+    "target": {
+      "object": "A510",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_EINA": {
+    "target": {
+      "object": "EINA",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KOTD501": {
+    "target": {
+      "object": "KOTD501",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KOTD502": {
+    "target": {
+      "object": "KOTD502",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KOTD503": {
+    "target": {
+      "object": "KOTD503",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KOTD505": {
+    "target": {
+      "object": "KOTD505",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KOTG001": {
+    "target": {
+      "object": "KOTG001",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_KOTG501": {
+    "target": {
+      "object": "KOTG501",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MARA": {
+    "target": {
+      "object": "MARA",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MARM": {
+    "target": {
+      "object": "MARM",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MLAN": {
+    "target": {
+      "object": "MLAN",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MBEW": {
+    "target": {
+      "object": "MBEW",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_EINE": {
+    "target": {
+      "object": "EINE",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_T171T": {
+    "target": {
+      "object": "T171T",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_CABN": {
+    "target": {
+      "object": "CABN",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::CABN": {
+    "target": {
+      "object": "CABN",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_CAWN": {
+    "target": {
+      "object": "CAWN",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_MARC": {
+    "target": {
+      "object": "MARC",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  },
+  "PRJ_DW_001.HDB_DW_001::Synonym_WYT1": {
+    "target": {
+      "object": "WYT1",
+      "schema": "SRC_ECC_SCHEMA",
+      "database": "DTD"
+    }
+  }
+}

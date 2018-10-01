@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_KNVI" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Customer Master Tax Indicator"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_KNVI">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_KNVI</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_KNA1">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_KNA1</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T005T">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T005T</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T685T">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T685T</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TSKDT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TSKDT</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="ALAND">
+        <descriptions defaultDescription="ALAND"/>
+      </viewAttribute>
+      <viewAttribute id="TATYP">
+        <descriptions defaultDescription="TATYP"/>
+      </viewAttribute>
+      <viewAttribute id="TAXKD">
+        <descriptions defaultDescription="TAXKD"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_KNVI">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ALAND" source="ALAND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TATYP" source="TATYP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXKD" source="TAXKD"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_KNA1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="KUNNR"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="ALAND">
+        <descriptions defaultDescription="ALAND"/>
+      </viewAttribute>
+      <viewAttribute id="TATYP">
+        <descriptions defaultDescription="TATYP"/>
+      </viewAttribute>
+      <viewAttribute id="TAXKD">
+        <descriptions defaultDescription="TAXKD"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+      <viewAttribute id="LANDX">
+        <descriptions defaultDescription="LANDX"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ALAND" source="ALAND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TATYP" source="TATYP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXKD" source="TAXKD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T005T">
+      <mapping xsi:type="Calculation:AttributeMapping" target="LANDX" source="LANDX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ALAND" source="LAND1"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="ALAND"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_3" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="ALAND">
+        <descriptions defaultDescription="ALAND"/>
+      </viewAttribute>
+      <viewAttribute id="TATYP">
+        <descriptions defaultDescription="TATYP"/>
+      </viewAttribute>
+      <viewAttribute id="TAXKD">
+        <descriptions defaultDescription="TAXKD"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+      <viewAttribute id="LANDX">
+        <descriptions defaultDescription="LANDX"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ALAND" source="ALAND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TATYP" source="TATYP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXKD" source="TAXKD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LANDX" source="LANDX"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T685T">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TATYP" source="KSCHL"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="TATYP"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_4" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="ALAND">
+        <descriptions defaultDescription="ALAND"/>
+      </viewAttribute>
+      <viewAttribute id="TATYP">
+        <descriptions defaultDescription="TATYP"/>
+      </viewAttribute>
+      <viewAttribute id="TAXKD">
+        <descriptions defaultDescription="TAXKD"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+      <viewAttribute id="LANDX">
+        <descriptions defaultDescription="LANDX"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_3">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ALAND" source="ALAND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TATYP" source="TATYP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXKD" source="TAXKD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LANDX" source="LANDX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_TSKDT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TAXKD" source="TAXKD"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="TAXKD"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_4">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_4" columnName="MANDT"/>
+    </attribute>
+    <attribute id="KUNNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUNNR"/>
+      <keyMapping columnObjectName="Join_4" columnName="KUNNR"/>
+    </attribute>
+    <attribute id="NAME1" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME1"/>
+      <keyMapping columnObjectName="Join_4" columnName="NAME1"/>
+    </attribute>
+    <attribute id="ALAND" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ALAND"/>
+      <keyMapping columnObjectName="Join_4" columnName="ALAND"/>
+    </attribute>
+    <attribute id="LANDX" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LANDX"/>
+      <keyMapping columnObjectName="Join_4" columnName="LANDX"/>
+    </attribute>
+    <attribute id="TATYP" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TATYP"/>
+      <keyMapping columnObjectName="Join_4" columnName="TATYP"/>
+    </attribute>
+    <attribute id="VTEXT" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT"/>
+      <keyMapping columnObjectName="Join_4" columnName="VTEXT"/>
+    </attribute>
+    <attribute id="TAXKD" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TAXKD"/>
+      <keyMapping columnObjectName="Join_4" columnName="TAXKD"/>
+    </attribute>
+    <attribute id="VTEXT_1" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_1"/>
+      <keyMapping columnObjectName="Join_4" columnName="VTEXT_1"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="110" y="589"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_KNVI" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_KNA1" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="110" y="467"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T005T" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_3" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="120" y="329"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_2" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T685T" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_4" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="111" y="203"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_3" modelObjectNameSpace="Join_4" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_TSKDT" modelObjectNameSpace="Join_4" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario> 

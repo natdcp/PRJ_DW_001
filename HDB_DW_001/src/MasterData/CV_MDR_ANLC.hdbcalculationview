@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_ANLC" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Asset Value Fields"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_ANLC">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_ANLC</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T001">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T001</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_ANLH">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_ANLH</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="BUKRS">
+        <descriptions defaultDescription="BUKRS"/>
+      </viewAttribute>
+      <viewAttribute id="ANLN1">
+        <descriptions defaultDescription="ANLN1"/>
+      </viewAttribute>
+      <viewAttribute id="ANLN2">
+        <descriptions defaultDescription="ANLN2"/>
+      </viewAttribute>
+      <viewAttribute id="GJAHR">
+        <descriptions defaultDescription="GJAHR"/>
+      </viewAttribute>
+      <viewAttribute id="AFABE">
+        <descriptions defaultDescription="AFABE"/>
+      </viewAttribute>
+      <viewAttribute id="ZUJHR">
+        <descriptions defaultDescription="ZUJHR"/>
+      </viewAttribute>
+      <viewAttribute id="ZUCOD">
+        <descriptions defaultDescription="ZUCOD"/>
+      </viewAttribute>
+      <viewAttribute id="AFBLPE">
+        <descriptions defaultDescription="AFBLPE"/>
+      </viewAttribute>
+      <viewAttribute id="AFBANZ">
+        <descriptions defaultDescription="AFBANZ"/>
+      </viewAttribute>
+      <viewAttribute id="XAFAR">
+        <descriptions defaultDescription="XAFAR"/>
+      </viewAttribute>
+      <viewAttribute id="NDABJ">
+        <descriptions defaultDescription="NDABJ"/>
+      </viewAttribute>
+      <viewAttribute id="NDABP">
+        <descriptions defaultDescription="NDABP"/>
+      </viewAttribute>
+      <viewAttribute id="ANDSJ">
+        <descriptions defaultDescription="ANDSJ"/>
+      </viewAttribute>
+      <viewAttribute id="ANDSP">
+        <descriptions defaultDescription="ANDSP"/>
+      </viewAttribute>
+      <viewAttribute id="RSTCK">
+        <descriptions defaultDescription="RSTCK"/>
+      </viewAttribute>
+      <viewAttribute id="KANSW">
+        <descriptions defaultDescription="KANSW"/>
+      </viewAttribute>
+      <viewAttribute id="KAUFW">
+        <descriptions defaultDescription="KAUFW"/>
+      </viewAttribute>
+      <viewAttribute id="KINVZ">
+        <descriptions defaultDescription="KINVZ"/>
+      </viewAttribute>
+      <viewAttribute id="KNAFA">
+        <descriptions defaultDescription="KNAFA"/>
+      </viewAttribute>
+      <viewAttribute id="KSAFA">
+        <descriptions defaultDescription="KSAFA"/>
+      </viewAttribute>
+      <viewAttribute id="KAAFA">
+        <descriptions defaultDescription="KAAFA"/>
+      </viewAttribute>
+      <viewAttribute id="KMAFA">
+        <descriptions defaultDescription="KMAFA"/>
+      </viewAttribute>
+      <viewAttribute id="KZINW">
+        <descriptions defaultDescription="KZINW"/>
+      </viewAttribute>
+      <viewAttribute id="KAUFN">
+        <descriptions defaultDescription="KAUFN"/>
+      </viewAttribute>
+      <viewAttribute id="KANZA">
+        <descriptions defaultDescription="KANZA"/>
+      </viewAttribute>
+      <viewAttribute id="KVOST">
+        <descriptions defaultDescription="KVOST"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWP">
+        <descriptions defaultDescription="AUFWP"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAP">
+        <descriptions defaultDescription="NAFAP"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAP">
+        <descriptions defaultDescription="SAFAP"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAP">
+        <descriptions defaultDescription="AAFAP"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAP">
+        <descriptions defaultDescription="MAFAP"/>
+      </viewAttribute>
+      <viewAttribute id="ZINSP">
+        <descriptions defaultDescription="ZINSP"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNP">
+        <descriptions defaultDescription="AUFNP"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWB">
+        <descriptions defaultDescription="AUFWB"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAG">
+        <descriptions defaultDescription="NAFAG"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAG">
+        <descriptions defaultDescription="SAFAG"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAG">
+        <descriptions defaultDescription="AAFAG"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAG">
+        <descriptions defaultDescription="MAFAG"/>
+      </viewAttribute>
+      <viewAttribute id="ZINSG">
+        <descriptions defaultDescription="ZINSG"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNG">
+        <descriptions defaultDescription="AUFNG"/>
+      </viewAttribute>
+      <viewAttribute id="ANSWL">
+        <descriptions defaultDescription="ANSWL"/>
+      </viewAttribute>
+      <viewAttribute id="ABGAN">
+        <descriptions defaultDescription="ABGAN"/>
+      </viewAttribute>
+      <viewAttribute id="ANSAZ">
+        <descriptions defaultDescription="ANSAZ"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWM">
+        <descriptions defaultDescription="AUFWM"/>
+      </viewAttribute>
+      <viewAttribute id="INVZM">
+        <descriptions defaultDescription="INVZM"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAM">
+        <descriptions defaultDescription="NAFAM"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAM">
+        <descriptions defaultDescription="SAFAM"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAM">
+        <descriptions defaultDescription="AAFAM"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAM">
+        <descriptions defaultDescription="MAFAM"/>
+      </viewAttribute>
+      <viewAttribute id="ZINSM">
+        <descriptions defaultDescription="ZINSM"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNM">
+        <descriptions defaultDescription="AUFNM"/>
+      </viewAttribute>
+      <viewAttribute id="ZUSNA">
+        <descriptions defaultDescription="ZUSNA"/>
+      </viewAttribute>
+      <viewAttribute id="ZUSSA">
+        <descriptions defaultDescription="ZUSSA"/>
+      </viewAttribute>
+      <viewAttribute id="ZUSAA">
+        <descriptions defaultDescription="ZUSAA"/>
+      </viewAttribute>
+      <viewAttribute id="ZUSMA">
+        <descriptions defaultDescription="ZUSMA"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWV">
+        <descriptions defaultDescription="AUFWV"/>
+      </viewAttribute>
+      <viewAttribute id="INVZV">
+        <descriptions defaultDescription="INVZV"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAV">
+        <descriptions defaultDescription="NAFAV"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAV">
+        <descriptions defaultDescription="SAFAV"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAV">
+        <descriptions defaultDescription="AAFAV"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAV">
+        <descriptions defaultDescription="MAFAV"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNV">
+        <descriptions defaultDescription="AUFNV"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWL">
+        <descriptions defaultDescription="AUFWL"/>
+      </viewAttribute>
+      <viewAttribute id="INVZL">
+        <descriptions defaultDescription="INVZL"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAL">
+        <descriptions defaultDescription="NAFAL"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAL">
+        <descriptions defaultDescription="SAFAL"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAL">
+        <descriptions defaultDescription="AAFAL"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAL">
+        <descriptions defaultDescription="MAFAL"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNL">
+        <descriptions defaultDescription="AUFNL"/>
+      </viewAttribute>
+      <viewAttribute id="ANUPD">
+        <descriptions defaultDescription="ANUPD"/>
+      </viewAttribute>
+      <viewAttribute id="KSANS">
+        <descriptions defaultDescription="KSANS"/>
+      </viewAttribute>
+      <viewAttribute id="SANSL">
+        <descriptions defaultDescription="SANSL"/>
+      </viewAttribute>
+      <viewAttribute id="PSTBEG">
+        <descriptions defaultDescription="PSTBEG"/>
+      </viewAttribute>
+      <viewAttribute id="PSTEND">
+        <descriptions defaultDescription="PSTEND"/>
+      </viewAttribute>
+      <viewAttribute id="PSTCALC">
+        <descriptions defaultDescription="PSTCALC"/>
+      </viewAttribute>
+      <viewAttribute id="PSTPER">
+        <descriptions defaultDescription="PSTPER"/>
+      </viewAttribute>
+      <viewAttribute id="BUTXT">
+        <descriptions defaultDescription="BUTXT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_ANLC">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANLN1" source="ANLN1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANLN2" source="ANLN2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="GJAHR" source="GJAHR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AFABE" source="AFABE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUJHR" source="ZUJHR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUCOD" source="ZUCOD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AFBLPE" source="AFBLPE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AFBANZ" source="AFBANZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="XAFAR" source="XAFAR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NDABJ" source="NDABJ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NDABP" source="NDABP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANDSJ" source="ANDSJ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANDSP" source="ANDSP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="RSTCK" source="RSTCK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KANSW" source="KANSW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAUFW" source="KAUFW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KINVZ" source="KINVZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNAFA" source="KNAFA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSAFA" source="KSAFA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAAFA" source="KAAFA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KMAFA" source="KMAFA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZINW" source="KZINW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAUFN" source="KAUFN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KANZA" source="KANZA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KVOST" source="KVOST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWP" source="AUFWP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAP" source="NAFAP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAP" source="SAFAP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAP" source="AAFAP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAP" source="MAFAP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZINSP" source="ZINSP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNP" source="AUFNP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWB" source="AUFWB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAG" source="NAFAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAG" source="SAFAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAG" source="AAFAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAG" source="MAFAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZINSG" source="ZINSG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNG" source="AUFNG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANSWL" source="ANSWL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ABGAN" source="ABGAN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANSAZ" source="ANSAZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWM" source="AUFWM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INVZM" source="INVZM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAM" source="NAFAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAM" source="SAFAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAM" source="AAFAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAM" source="MAFAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZINSM" source="ZINSM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNM" source="AUFNM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUSNA" source="ZUSNA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUSSA" source="ZUSSA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUSAA" source="ZUSAA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUSMA" source="ZUSMA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWV" source="AUFWV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INVZV" source="INVZV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAV" source="NAFAV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAV" source="SAFAV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAV" source="AAFAV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAV" source="MAFAV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNV" source="AUFNV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWL" source="AUFWL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INVZL" source="INVZL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAL" source="NAFAL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAL" source="SAFAL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAL" source="AAFAL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAL" source="MAFAL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNL" source="AUFNL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANUPD" source="ANUPD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSANS" source="KSANS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SANSL" source="SANSL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTBEG" source="PSTBEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTEND" source="PSTEND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTCALC" source="PSTCALC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTPER" source="PSTPER"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T001">
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUTXT" source="BUTXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="BUKRS"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="BUKRS">
+        <descriptions defaultDescription="BUKRS"/>
+      </viewAttribute>
+      <viewAttribute id="ANLN1">
+        <descriptions defaultDescription="ANLN1"/>
+      </viewAttribute>
+      <viewAttribute id="ANLN2">
+        <descriptions defaultDescription="ANLN2"/>
+      </viewAttribute>
+      <viewAttribute id="GJAHR">
+        <descriptions defaultDescription="GJAHR"/>
+      </viewAttribute>
+      <viewAttribute id="AFABE">
+        <descriptions defaultDescription="AFABE"/>
+      </viewAttribute>
+      <viewAttribute id="ZUJHR">
+        <descriptions defaultDescription="ZUJHR"/>
+      </viewAttribute>
+      <viewAttribute id="ZUCOD">
+        <descriptions defaultDescription="ZUCOD"/>
+      </viewAttribute>
+      <viewAttribute id="AFBLPE">
+        <descriptions defaultDescription="AFBLPE"/>
+      </viewAttribute>
+      <viewAttribute id="AFBANZ">
+        <descriptions defaultDescription="AFBANZ"/>
+      </viewAttribute>
+      <viewAttribute id="XAFAR">
+        <descriptions defaultDescription="XAFAR"/>
+      </viewAttribute>
+      <viewAttribute id="NDABJ">
+        <descriptions defaultDescription="NDABJ"/>
+      </viewAttribute>
+      <viewAttribute id="NDABP">
+        <descriptions defaultDescription="NDABP"/>
+      </viewAttribute>
+      <viewAttribute id="ANDSJ">
+        <descriptions defaultDescription="ANDSJ"/>
+      </viewAttribute>
+      <viewAttribute id="ANDSP">
+        <descriptions defaultDescription="ANDSP"/>
+      </viewAttribute>
+      <viewAttribute id="RSTCK">
+        <descriptions defaultDescription="RSTCK"/>
+      </viewAttribute>
+      <viewAttribute id="KANSW">
+        <descriptions defaultDescription="KANSW"/>
+      </viewAttribute>
+      <viewAttribute id="KAUFW">
+        <descriptions defaultDescription="KAUFW"/>
+      </viewAttribute>
+      <viewAttribute id="KINVZ">
+        <descriptions defaultDescription="KINVZ"/>
+      </viewAttribute>
+      <viewAttribute id="KNAFA">
+        <descriptions defaultDescription="KNAFA"/>
+      </viewAttribute>
+      <viewAttribute id="KSAFA">
+        <descriptions defaultDescription="KSAFA"/>
+      </viewAttribute>
+      <viewAttribute id="KAAFA">
+        <descriptions defaultDescription="KAAFA"/>
+      </viewAttribute>
+      <viewAttribute id="KMAFA">
+        <descriptions defaultDescription="KMAFA"/>
+      </viewAttribute>
+      <viewAttribute id="KZINW">
+        <descriptions defaultDescription="KZINW"/>
+      </viewAttribute>
+      <viewAttribute id="KAUFN">
+        <descriptions defaultDescription="KAUFN"/>
+      </viewAttribute>
+      <viewAttribute id="KANZA">
+        <descriptions defaultDescription="KANZA"/>
+      </viewAttribute>
+      <viewAttribute id="KVOST">
+        <descriptions defaultDescription="KVOST"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWP">
+        <descriptions defaultDescription="AUFWP"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAP">
+        <descriptions defaultDescription="NAFAP"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAP">
+        <descriptions defaultDescription="SAFAP"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAP">
+        <descriptions defaultDescription="AAFAP"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAP">
+        <descriptions defaultDescription="MAFAP"/>
+      </viewAttribute>
+      <viewAttribute id="ZINSP">
+        <descriptions defaultDescription="ZINSP"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNP">
+        <descriptions defaultDescription="AUFNP"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWB">
+        <descriptions defaultDescription="AUFWB"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAG">
+        <descriptions defaultDescription="NAFAG"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAG">
+        <descriptions defaultDescription="SAFAG"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAG">
+        <descriptions defaultDescription="AAFAG"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAG">
+        <descriptions defaultDescription="MAFAG"/>
+      </viewAttribute>
+      <viewAttribute id="ZINSG">
+        <descriptions defaultDescription="ZINSG"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNG">
+        <descriptions defaultDescription="AUFNG"/>
+      </viewAttribute>
+      <viewAttribute id="ANSWL">
+        <descriptions defaultDescription="ANSWL"/>
+      </viewAttribute>
+      <viewAttribute id="ABGAN">
+        <descriptions defaultDescription="ABGAN"/>
+      </viewAttribute>
+      <viewAttribute id="ANSAZ">
+        <descriptions defaultDescription="ANSAZ"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWM">
+        <descriptions defaultDescription="AUFWM"/>
+      </viewAttribute>
+      <viewAttribute id="INVZM">
+        <descriptions defaultDescription="INVZM"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAM">
+        <descriptions defaultDescription="NAFAM"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAM">
+        <descriptions defaultDescription="SAFAM"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAM">
+        <descriptions defaultDescription="AAFAM"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAM">
+        <descriptions defaultDescription="MAFAM"/>
+      </viewAttribute>
+      <viewAttribute id="ZINSM">
+        <descriptions defaultDescription="ZINSM"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNM">
+        <descriptions defaultDescription="AUFNM"/>
+      </viewAttribute>
+      <viewAttribute id="ZUSNA">
+        <descriptions defaultDescription="ZUSNA"/>
+      </viewAttribute>
+      <viewAttribute id="ZUSSA">
+        <descriptions defaultDescription="ZUSSA"/>
+      </viewAttribute>
+      <viewAttribute id="ZUSAA">
+        <descriptions defaultDescription="ZUSAA"/>
+      </viewAttribute>
+      <viewAttribute id="ZUSMA">
+        <descriptions defaultDescription="ZUSMA"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWV">
+        <descriptions defaultDescription="AUFWV"/>
+      </viewAttribute>
+      <viewAttribute id="INVZV">
+        <descriptions defaultDescription="INVZV"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAV">
+        <descriptions defaultDescription="NAFAV"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAV">
+        <descriptions defaultDescription="SAFAV"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAV">
+        <descriptions defaultDescription="AAFAV"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAV">
+        <descriptions defaultDescription="MAFAV"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNV">
+        <descriptions defaultDescription="AUFNV"/>
+      </viewAttribute>
+      <viewAttribute id="AUFWL">
+        <descriptions defaultDescription="AUFWL"/>
+      </viewAttribute>
+      <viewAttribute id="INVZL">
+        <descriptions defaultDescription="INVZL"/>
+      </viewAttribute>
+      <viewAttribute id="NAFAL">
+        <descriptions defaultDescription="NAFAL"/>
+      </viewAttribute>
+      <viewAttribute id="SAFAL">
+        <descriptions defaultDescription="SAFAL"/>
+      </viewAttribute>
+      <viewAttribute id="AAFAL">
+        <descriptions defaultDescription="AAFAL"/>
+      </viewAttribute>
+      <viewAttribute id="MAFAL">
+        <descriptions defaultDescription="MAFAL"/>
+      </viewAttribute>
+      <viewAttribute id="AUFNL">
+        <descriptions defaultDescription="AUFNL"/>
+      </viewAttribute>
+      <viewAttribute id="ANUPD">
+        <descriptions defaultDescription="ANUPD"/>
+      </viewAttribute>
+      <viewAttribute id="KSANS">
+        <descriptions defaultDescription="KSANS"/>
+      </viewAttribute>
+      <viewAttribute id="SANSL">
+        <descriptions defaultDescription="SANSL"/>
+      </viewAttribute>
+      <viewAttribute id="PSTBEG">
+        <descriptions defaultDescription="PSTBEG"/>
+      </viewAttribute>
+      <viewAttribute id="PSTEND">
+        <descriptions defaultDescription="PSTEND"/>
+      </viewAttribute>
+      <viewAttribute id="PSTCALC">
+        <descriptions defaultDescription="PSTCALC"/>
+      </viewAttribute>
+      <viewAttribute id="PSTPER">
+        <descriptions defaultDescription="PSTPER"/>
+      </viewAttribute>
+      <viewAttribute id="BUTXT">
+        <descriptions defaultDescription="BUTXT"/>
+      </viewAttribute>
+      <viewAttribute id="ANLHTXT">
+        <descriptions defaultDescription="ANLHTXT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUKRS" source="BUKRS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANLN1" source="ANLN1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANLN2" source="ANLN2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="GJAHR" source="GJAHR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AFABE" source="AFABE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUJHR" source="ZUJHR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUCOD" source="ZUCOD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AFBLPE" source="AFBLPE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AFBANZ" source="AFBANZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="XAFAR" source="XAFAR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NDABJ" source="NDABJ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NDABP" source="NDABP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANDSJ" source="ANDSJ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANDSP" source="ANDSP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="RSTCK" source="RSTCK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KANSW" source="KANSW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAUFW" source="KAUFW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KINVZ" source="KINVZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNAFA" source="KNAFA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSAFA" source="KSAFA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAAFA" source="KAAFA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KMAFA" source="KMAFA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KZINW" source="KZINW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KAUFN" source="KAUFN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KANZA" source="KANZA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KVOST" source="KVOST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWP" source="AUFWP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAP" source="NAFAP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAP" source="SAFAP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAP" source="AAFAP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAP" source="MAFAP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZINSP" source="ZINSP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNP" source="AUFNP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWB" source="AUFWB"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAG" source="NAFAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAG" source="SAFAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAG" source="AAFAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAG" source="MAFAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZINSG" source="ZINSG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNG" source="AUFNG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANSWL" source="ANSWL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ABGAN" source="ABGAN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANSAZ" source="ANSAZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWM" source="AUFWM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INVZM" source="INVZM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAM" source="NAFAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAM" source="SAFAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAM" source="AAFAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAM" source="MAFAM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZINSM" source="ZINSM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNM" source="AUFNM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUSNA" source="ZUSNA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUSSA" source="ZUSSA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUSAA" source="ZUSAA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ZUSMA" source="ZUSMA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWV" source="AUFWV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INVZV" source="INVZV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAV" source="NAFAV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAV" source="SAFAV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAV" source="AAFAV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAV" source="MAFAV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNV" source="AUFNV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFWL" source="AUFWL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="INVZL" source="INVZL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAFAL" source="NAFAL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SAFAL" source="SAFAL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AAFAL" source="AAFAL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAFAL" source="MAFAL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUFNL" source="AUFNL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANUPD" source="ANUPD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KSANS" source="KSANS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SANSL" source="SANSL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTBEG" source="PSTBEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTEND" source="PSTEND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTCALC" source="PSTCALC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSTPER" source="PSTPER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUTXT" source="BUTXT"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_ANLH">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANLHTXT" source="ANLHTXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ANLN1" source="ANLN1"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="ANLN1"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_2">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_2" columnName="MANDT"/>
+    </attribute>
+    <attribute id="BUKRS" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUKRS"/>
+      <keyMapping columnObjectName="Join_2" columnName="BUKRS"/>
+    </attribute>
+    <attribute id="BUTXT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BUTXT"/>
+      <keyMapping columnObjectName="Join_2" columnName="BUTXT"/>
+    </attribute>
+    <attribute id="ANLN1" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANLN1"/>
+      <keyMapping columnObjectName="Join_2" columnName="ANLN1"/>
+    </attribute>
+    <attribute id="ANLHTXT" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANLHTXT"/>
+      <keyMapping columnObjectName="Join_2" columnName="ANLHTXT"/>
+    </attribute>
+    <attribute id="ANLN2" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANLN2"/>
+      <keyMapping columnObjectName="Join_2" columnName="ANLN2"/>
+    </attribute>
+    <attribute id="GJAHR" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GJAHR"/>
+      <keyMapping columnObjectName="Join_2" columnName="GJAHR"/>
+    </attribute>
+    <attribute id="AFABE" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AFABE"/>
+      <keyMapping columnObjectName="Join_2" columnName="AFABE"/>
+    </attribute>
+    <attribute id="ZUJHR" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZUJHR"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZUJHR"/>
+    </attribute>
+    <attribute id="ZUCOD" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZUCOD"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZUCOD"/>
+    </attribute>
+    <attribute id="AFBLPE" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AFBLPE"/>
+      <keyMapping columnObjectName="Join_2" columnName="AFBLPE"/>
+    </attribute>
+    <attribute id="AFBANZ" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AFBANZ"/>
+      <keyMapping columnObjectName="Join_2" columnName="AFBANZ"/>
+    </attribute>
+    <attribute id="XAFAR" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XAFAR"/>
+      <keyMapping columnObjectName="Join_2" columnName="XAFAR"/>
+    </attribute>
+    <attribute id="NDABJ" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NDABJ"/>
+      <keyMapping columnObjectName="Join_2" columnName="NDABJ"/>
+    </attribute>
+    <attribute id="NDABP" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NDABP"/>
+      <keyMapping columnObjectName="Join_2" columnName="NDABP"/>
+    </attribute>
+    <attribute id="ANDSJ" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANDSJ"/>
+      <keyMapping columnObjectName="Join_2" columnName="ANDSJ"/>
+    </attribute>
+    <attribute id="ANDSP" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANDSP"/>
+      <keyMapping columnObjectName="Join_2" columnName="ANDSP"/>
+    </attribute>
+    <attribute id="RSTCK" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RSTCK"/>
+      <keyMapping columnObjectName="Join_2" columnName="RSTCK"/>
+    </attribute>
+    <attribute id="KANSW" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KANSW"/>
+      <keyMapping columnObjectName="Join_2" columnName="KANSW"/>
+    </attribute>
+    <attribute id="KAUFW" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAUFW"/>
+      <keyMapping columnObjectName="Join_2" columnName="KAUFW"/>
+    </attribute>
+    <attribute id="KINVZ" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KINVZ"/>
+      <keyMapping columnObjectName="Join_2" columnName="KINVZ"/>
+    </attribute>
+    <attribute id="KNAFA" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KNAFA"/>
+      <keyMapping columnObjectName="Join_2" columnName="KNAFA"/>
+    </attribute>
+    <attribute id="KSAFA" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSAFA"/>
+      <keyMapping columnObjectName="Join_2" columnName="KSAFA"/>
+    </attribute>
+    <attribute id="KAAFA" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAAFA"/>
+      <keyMapping columnObjectName="Join_2" columnName="KAAFA"/>
+    </attribute>
+    <attribute id="KMAFA" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KMAFA"/>
+      <keyMapping columnObjectName="Join_2" columnName="KMAFA"/>
+    </attribute>
+    <attribute id="KZINW" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KZINW"/>
+      <keyMapping columnObjectName="Join_2" columnName="KZINW"/>
+    </attribute>
+    <attribute id="KAUFN" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAUFN"/>
+      <keyMapping columnObjectName="Join_2" columnName="KAUFN"/>
+    </attribute>
+    <attribute id="KANZA" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KANZA"/>
+      <keyMapping columnObjectName="Join_2" columnName="KANZA"/>
+    </attribute>
+    <attribute id="KVOST" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KVOST"/>
+      <keyMapping columnObjectName="Join_2" columnName="KVOST"/>
+    </attribute>
+    <attribute id="AUFWP" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFWP"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFWP"/>
+    </attribute>
+    <attribute id="NAFAP" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAFAP"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAFAP"/>
+    </attribute>
+    <attribute id="SAFAP" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SAFAP"/>
+      <keyMapping columnObjectName="Join_2" columnName="SAFAP"/>
+    </attribute>
+    <attribute id="AAFAP" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AAFAP"/>
+      <keyMapping columnObjectName="Join_2" columnName="AAFAP"/>
+    </attribute>
+    <attribute id="MAFAP" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAFAP"/>
+      <keyMapping columnObjectName="Join_2" columnName="MAFAP"/>
+    </attribute>
+    <attribute id="ZINSP" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZINSP"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZINSP"/>
+    </attribute>
+    <attribute id="AUFNP" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFNP"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFNP"/>
+    </attribute>
+    <attribute id="AUFWB" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFWB"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFWB"/>
+    </attribute>
+    <attribute id="NAFAG" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAFAG"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAFAG"/>
+    </attribute>
+    <attribute id="SAFAG" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SAFAG"/>
+      <keyMapping columnObjectName="Join_2" columnName="SAFAG"/>
+    </attribute>
+    <attribute id="AAFAG" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AAFAG"/>
+      <keyMapping columnObjectName="Join_2" columnName="AAFAG"/>
+    </attribute>
+    <attribute id="MAFAG" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAFAG"/>
+      <keyMapping columnObjectName="Join_2" columnName="MAFAG"/>
+    </attribute>
+    <attribute id="ZINSG" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZINSG"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZINSG"/>
+    </attribute>
+    <attribute id="AUFNG" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFNG"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFNG"/>
+    </attribute>
+    <attribute id="ANSWL" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANSWL"/>
+      <keyMapping columnObjectName="Join_2" columnName="ANSWL"/>
+    </attribute>
+    <attribute id="ABGAN" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ABGAN"/>
+      <keyMapping columnObjectName="Join_2" columnName="ABGAN"/>
+    </attribute>
+    <attribute id="ANSAZ" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANSAZ"/>
+      <keyMapping columnObjectName="Join_2" columnName="ANSAZ"/>
+    </attribute>
+    <attribute id="AUFWM" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFWM"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFWM"/>
+    </attribute>
+    <attribute id="INVZM" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INVZM"/>
+      <keyMapping columnObjectName="Join_2" columnName="INVZM"/>
+    </attribute>
+    <attribute id="NAFAM" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAFAM"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAFAM"/>
+    </attribute>
+    <attribute id="SAFAM" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SAFAM"/>
+      <keyMapping columnObjectName="Join_2" columnName="SAFAM"/>
+    </attribute>
+    <attribute id="AAFAM" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AAFAM"/>
+      <keyMapping columnObjectName="Join_2" columnName="AAFAM"/>
+    </attribute>
+    <attribute id="MAFAM" order="52" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAFAM"/>
+      <keyMapping columnObjectName="Join_2" columnName="MAFAM"/>
+    </attribute>
+    <attribute id="ZINSM" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZINSM"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZINSM"/>
+    </attribute>
+    <attribute id="AUFNM" order="54" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFNM"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFNM"/>
+    </attribute>
+    <attribute id="ZUSNA" order="55" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZUSNA"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZUSNA"/>
+    </attribute>
+    <attribute id="ZUSSA" order="56" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZUSSA"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZUSSA"/>
+    </attribute>
+    <attribute id="ZUSAA" order="57" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZUSAA"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZUSAA"/>
+    </attribute>
+    <attribute id="ZUSMA" order="58" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ZUSMA"/>
+      <keyMapping columnObjectName="Join_2" columnName="ZUSMA"/>
+    </attribute>
+    <attribute id="AUFWV" order="59" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFWV"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFWV"/>
+    </attribute>
+    <attribute id="INVZV" order="60" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INVZV"/>
+      <keyMapping columnObjectName="Join_2" columnName="INVZV"/>
+    </attribute>
+    <attribute id="NAFAV" order="61" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAFAV"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAFAV"/>
+    </attribute>
+    <attribute id="SAFAV" order="62" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SAFAV"/>
+      <keyMapping columnObjectName="Join_2" columnName="SAFAV"/>
+    </attribute>
+    <attribute id="AAFAV" order="63" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AAFAV"/>
+      <keyMapping columnObjectName="Join_2" columnName="AAFAV"/>
+    </attribute>
+    <attribute id="MAFAV" order="64" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAFAV"/>
+      <keyMapping columnObjectName="Join_2" columnName="MAFAV"/>
+    </attribute>
+    <attribute id="AUFNV" order="65" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFNV"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFNV"/>
+    </attribute>
+    <attribute id="AUFWL" order="66" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFWL"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFWL"/>
+    </attribute>
+    <attribute id="INVZL" order="67" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="INVZL"/>
+      <keyMapping columnObjectName="Join_2" columnName="INVZL"/>
+    </attribute>
+    <attribute id="NAFAL" order="68" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAFAL"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAFAL"/>
+    </attribute>
+    <attribute id="SAFAL" order="69" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SAFAL"/>
+      <keyMapping columnObjectName="Join_2" columnName="SAFAL"/>
+    </attribute>
+    <attribute id="AAFAL" order="70" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AAFAL"/>
+      <keyMapping columnObjectName="Join_2" columnName="AAFAL"/>
+    </attribute>
+    <attribute id="MAFAL" order="71" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAFAL"/>
+      <keyMapping columnObjectName="Join_2" columnName="MAFAL"/>
+    </attribute>
+    <attribute id="AUFNL" order="72" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AUFNL"/>
+      <keyMapping columnObjectName="Join_2" columnName="AUFNL"/>
+    </attribute>
+    <attribute id="ANUPD" order="73" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANUPD"/>
+      <keyMapping columnObjectName="Join_2" columnName="ANUPD"/>
+    </attribute>
+    <attribute id="KSANS" order="74" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSANS"/>
+      <keyMapping columnObjectName="Join_2" columnName="KSANS"/>
+    </attribute>
+    <attribute id="SANSL" order="75" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SANSL"/>
+      <keyMapping columnObjectName="Join_2" columnName="SANSL"/>
+    </attribute>
+    <attribute id="PSTBEG" order="76" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSTBEG"/>
+      <keyMapping columnObjectName="Join_2" columnName="PSTBEG"/>
+    </attribute>
+    <attribute id="PSTEND" order="77" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSTEND"/>
+      <keyMapping columnObjectName="Join_2" columnName="PSTEND"/>
+    </attribute>
+    <attribute id="PSTCALC" order="78" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSTCALC"/>
+      <keyMapping columnObjectName="Join_2" columnName="PSTCALC"/>
+    </attribute>
+    <attribute id="PSTPER" order="79" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSTPER"/>
+      <keyMapping columnObjectName="Join_2" columnName="PSTPER"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="115" y="289"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_ANLC" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T001" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="195"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_ANLH" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

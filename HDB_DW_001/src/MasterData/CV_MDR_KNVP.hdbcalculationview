@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_KNVP" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Customer Master Partner Functions"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_KNVP">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_KNVP</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TVKOT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TVKOT</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TVTWT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TVTWT</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TSPAT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TSPAT</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_TPART">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_TPART</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PARVW">
+        <descriptions defaultDescription="PARVW"/>
+      </viewAttribute>
+      <viewAttribute id="PARZA">
+        <descriptions defaultDescription="PARZA"/>
+      </viewAttribute>
+      <viewAttribute id="KUNN2">
+        <descriptions defaultDescription="KUNN2"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="PERNR">
+        <descriptions defaultDescription="PERNR"/>
+      </viewAttribute>
+      <viewAttribute id="PARNR">
+        <descriptions defaultDescription="PARNR"/>
+      </viewAttribute>
+      <viewAttribute id="KNREF">
+        <descriptions defaultDescription="KNREF"/>
+      </viewAttribute>
+      <viewAttribute id="DEFPA">
+        <descriptions defaultDescription="DEFPA"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_KNVP">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARVW" source="PARVW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARZA" source="PARZA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNN2" source="KUNN2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERNR" source="PERNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARNR" source="PARNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNREF" source="KNREF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DEFPA" source="DEFPA"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_TVKOT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="VKORG"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PARVW">
+        <descriptions defaultDescription="PARVW"/>
+      </viewAttribute>
+      <viewAttribute id="PARZA">
+        <descriptions defaultDescription="PARZA"/>
+      </viewAttribute>
+      <viewAttribute id="KUNN2">
+        <descriptions defaultDescription="KUNN2"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="PERNR">
+        <descriptions defaultDescription="PERNR"/>
+      </viewAttribute>
+      <viewAttribute id="PARNR">
+        <descriptions defaultDescription="PARNR"/>
+      </viewAttribute>
+      <viewAttribute id="KNREF">
+        <descriptions defaultDescription="KNREF"/>
+      </viewAttribute>
+      <viewAttribute id="DEFPA">
+        <descriptions defaultDescription="DEFPA"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARVW" source="PARVW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARZA" source="PARZA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNN2" source="KUNN2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERNR" source="PERNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARNR" source="PARNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNREF" source="KNREF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DEFPA" source="DEFPA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_TVTWT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="VTWEG"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_3" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PARVW">
+        <descriptions defaultDescription="PARVW"/>
+      </viewAttribute>
+      <viewAttribute id="PARZA">
+        <descriptions defaultDescription="PARZA"/>
+      </viewAttribute>
+      <viewAttribute id="KUNN2">
+        <descriptions defaultDescription="KUNN2"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="PERNR">
+        <descriptions defaultDescription="PERNR"/>
+      </viewAttribute>
+      <viewAttribute id="PARNR">
+        <descriptions defaultDescription="PARNR"/>
+      </viewAttribute>
+      <viewAttribute id="KNREF">
+        <descriptions defaultDescription="KNREF"/>
+      </viewAttribute>
+      <viewAttribute id="DEFPA">
+        <descriptions defaultDescription="DEFPA"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_2">
+        <descriptions defaultDescription="VTEXT_2"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARVW" source="PARVW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARZA" source="PARZA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNN2" source="KUNN2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERNR" source="PERNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARNR" source="PARNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNREF" source="KNREF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DEFPA" source="DEFPA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_TSPAT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_2" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="SPART"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_4" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="KUNNR">
+        <descriptions defaultDescription="KUNNR"/>
+      </viewAttribute>
+      <viewAttribute id="VKORG">
+        <descriptions defaultDescription="VKORG"/>
+      </viewAttribute>
+      <viewAttribute id="VTWEG">
+        <descriptions defaultDescription="VTWEG"/>
+      </viewAttribute>
+      <viewAttribute id="SPART">
+        <descriptions defaultDescription="SPART"/>
+      </viewAttribute>
+      <viewAttribute id="PARVW">
+        <descriptions defaultDescription="PARVW"/>
+      </viewAttribute>
+      <viewAttribute id="PARZA">
+        <descriptions defaultDescription="PARZA"/>
+      </viewAttribute>
+      <viewAttribute id="KUNN2">
+        <descriptions defaultDescription="KUNN2"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="PERNR">
+        <descriptions defaultDescription="PERNR"/>
+      </viewAttribute>
+      <viewAttribute id="PARNR">
+        <descriptions defaultDescription="PARNR"/>
+      </viewAttribute>
+      <viewAttribute id="KNREF">
+        <descriptions defaultDescription="KNREF"/>
+      </viewAttribute>
+      <viewAttribute id="DEFPA">
+        <descriptions defaultDescription="DEFPA"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT">
+        <descriptions defaultDescription="VTEXT"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_1">
+        <descriptions defaultDescription="VTEXT_1"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_2">
+        <descriptions defaultDescription="VTEXT_2"/>
+      </viewAttribute>
+      <viewAttribute id="VTEXT_3">
+        <descriptions defaultDescription="VTEXT_3"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_3">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNNR" source="KUNNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VKORG" source="VKORG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTWEG" source="VTWEG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPART" source="SPART"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARVW" source="PARVW"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARZA" source="PARZA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KUNN2" source="KUNN2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERNR" source="PERNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARNR" source="PARNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KNREF" source="KNREF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DEFPA" source="DEFPA"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_1" source="VTEXT_1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_2" source="VTEXT_2"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_TPART">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VTEXT_3" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PARVW" source="PARVW"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="PARVW"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_4">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_4" columnName="MANDT"/>
+    </attribute>
+    <attribute id="KUNNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUNNR"/>
+      <keyMapping columnObjectName="Join_4" columnName="KUNNR"/>
+    </attribute>
+    <attribute id="VKORG" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VKORG"/>
+      <keyMapping columnObjectName="Join_4" columnName="VKORG"/>
+    </attribute>
+    <attribute id="VTEXT" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT"/>
+      <keyMapping columnObjectName="Join_4" columnName="VTEXT"/>
+    </attribute>
+    <attribute id="VTWEG" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTWEG"/>
+      <keyMapping columnObjectName="Join_4" columnName="VTWEG"/>
+    </attribute>
+    <attribute id="VTEXT_1" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_1"/>
+      <keyMapping columnObjectName="Join_4" columnName="VTEXT_1"/>
+    </attribute>
+    <attribute id="SPART" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SPART"/>
+      <keyMapping columnObjectName="Join_4" columnName="SPART"/>
+    </attribute>
+    <attribute id="VTEXT_2" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_2"/>
+      <keyMapping columnObjectName="Join_4" columnName="VTEXT_2"/>
+    </attribute>
+    <attribute id="PARVW" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PARVW"/>
+      <keyMapping columnObjectName="Join_4" columnName="PARVW"/>
+    </attribute>
+    <attribute id="VTEXT_3" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT_3"/>
+      <keyMapping columnObjectName="Join_4" columnName="VTEXT_3"/>
+    </attribute>
+    <attribute id="PARZA" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PARZA"/>
+      <keyMapping columnObjectName="Join_4" columnName="PARZA"/>
+    </attribute>
+    <attribute id="KUNN2" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KUNN2"/>
+      <keyMapping columnObjectName="Join_4" columnName="KUNN2"/>
+    </attribute>
+    <attribute id="LIFNR" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LIFNR"/>
+      <keyMapping columnObjectName="Join_4" columnName="LIFNR"/>
+    </attribute>
+    <attribute id="PERNR" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERNR"/>
+      <keyMapping columnObjectName="Join_4" columnName="PERNR"/>
+    </attribute>
+    <attribute id="PARNR" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PARNR"/>
+      <keyMapping columnObjectName="Join_4" columnName="PARNR"/>
+    </attribute>
+    <attribute id="KNREF" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KNREF"/>
+      <keyMapping columnObjectName="Join_4" columnName="KNREF"/>
+    </attribute>
+    <attribute id="DEFPA" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DEFPA"/>
+      <keyMapping columnObjectName="Join_4" columnName="DEFPA"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="142" y="760"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_KNVP" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_TVKOT" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="145" y="612"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_TVTWT" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_3" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="142" y="463"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_2" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_TSPAT" modelObjectNameSpace="Join_3" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_4" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="145" y="330"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_3" modelObjectNameSpace="Join_4" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_TPART" modelObjectNameSpace="Join_4" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

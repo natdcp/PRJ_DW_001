@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_LFBK" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Vendor Master (Bank Details)"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_LFBK">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_LFBK</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_LFA1">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_LFA1</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T005T">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T005T</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="BANKS">
+        <descriptions defaultDescription="BANKS"/>
+      </viewAttribute>
+      <viewAttribute id="BANKL">
+        <descriptions defaultDescription="BANKL"/>
+      </viewAttribute>
+      <viewAttribute id="BANKN">
+        <descriptions defaultDescription="BANKN"/>
+      </viewAttribute>
+      <viewAttribute id="BKONT">
+        <descriptions defaultDescription="BKONT"/>
+      </viewAttribute>
+      <viewAttribute id="BVTYP">
+        <descriptions defaultDescription="BVTYP"/>
+      </viewAttribute>
+      <viewAttribute id="XEZER">
+        <descriptions defaultDescription="XEZER"/>
+      </viewAttribute>
+      <viewAttribute id="BKREF">
+        <descriptions defaultDescription="BKREF"/>
+      </viewAttribute>
+      <viewAttribute id="KOINH">
+        <descriptions defaultDescription="KOINH"/>
+      </viewAttribute>
+      <viewAttribute id="EBPP_ACCNAME">
+        <descriptions defaultDescription="EBPP_ACCNAME"/>
+      </viewAttribute>
+      <viewAttribute id="EBPP_BVSTATUS">
+        <descriptions defaultDescription="EBPP_BVSTATUS"/>
+      </viewAttribute>
+      <viewAttribute id="KOVON">
+        <descriptions defaultDescription="KOVON"/>
+      </viewAttribute>
+      <viewAttribute id="KOBIS">
+        <descriptions defaultDescription="KOBIS"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_LFBK">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BANKS" source="BANKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BANKL" source="BANKL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BANKN" source="BANKN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BKONT" source="BKONT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BVTYP" source="BVTYP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="XEZER" source="XEZER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BKREF" source="BKREF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KOINH" source="KOINH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EBPP_ACCNAME" source="EBPP_ACCNAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EBPP_BVSTATUS" source="EBPP_BVSTATUS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KOVON" source="KOVON"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KOBIS" source="KOBIS"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_LFA1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="LIFNR"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="LIFNR">
+        <descriptions defaultDescription="LIFNR"/>
+      </viewAttribute>
+      <viewAttribute id="BANKS">
+        <descriptions defaultDescription="BANKS"/>
+      </viewAttribute>
+      <viewAttribute id="BANKL">
+        <descriptions defaultDescription="BANKL"/>
+      </viewAttribute>
+      <viewAttribute id="BANKN">
+        <descriptions defaultDescription="BANKN"/>
+      </viewAttribute>
+      <viewAttribute id="BKONT">
+        <descriptions defaultDescription="BKONT"/>
+      </viewAttribute>
+      <viewAttribute id="BVTYP">
+        <descriptions defaultDescription="BVTYP"/>
+      </viewAttribute>
+      <viewAttribute id="XEZER">
+        <descriptions defaultDescription="XEZER"/>
+      </viewAttribute>
+      <viewAttribute id="BKREF">
+        <descriptions defaultDescription="BKREF"/>
+      </viewAttribute>
+      <viewAttribute id="KOINH">
+        <descriptions defaultDescription="KOINH"/>
+      </viewAttribute>
+      <viewAttribute id="EBPP_ACCNAME">
+        <descriptions defaultDescription="EBPP_ACCNAME"/>
+      </viewAttribute>
+      <viewAttribute id="EBPP_BVSTATUS">
+        <descriptions defaultDescription="EBPP_BVSTATUS"/>
+      </viewAttribute>
+      <viewAttribute id="KOVON">
+        <descriptions defaultDescription="KOVON"/>
+      </viewAttribute>
+      <viewAttribute id="KOBIS">
+        <descriptions defaultDescription="KOBIS"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+      <viewAttribute id="LANDX">
+        <descriptions defaultDescription="LANDX"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LIFNR" source="LIFNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BANKS" source="BANKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BANKL" source="BANKL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BANKN" source="BANKN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BKONT" source="BKONT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BVTYP" source="BVTYP"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="XEZER" source="XEZER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BKREF" source="BKREF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KOINH" source="KOINH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EBPP_ACCNAME" source="EBPP_ACCNAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EBPP_BVSTATUS" source="EBPP_BVSTATUS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KOVON" source="KOVON"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="KOBIS" source="KOBIS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T005T">
+      <mapping xsi:type="Calculation:AttributeMapping" target="LANDX" source="LANDX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BANKS" source="LAND1"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="BANKS"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_2">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_2" columnName="MANDT"/>
+    </attribute>
+    <attribute id="LIFNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LIFNR"/>
+      <keyMapping columnObjectName="Join_2" columnName="LIFNR"/>
+    </attribute>
+    <attribute id="NAME1" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME1"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAME1"/>
+    </attribute>
+    <attribute id="BANKS" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BANKS"/>
+      <keyMapping columnObjectName="Join_2" columnName="BANKS"/>
+    </attribute>
+    <attribute id="LANDX" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LANDX"/>
+      <keyMapping columnObjectName="Join_2" columnName="LANDX"/>
+    </attribute>
+    <attribute id="BANKL" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BANKL"/>
+      <keyMapping columnObjectName="Join_2" columnName="BANKL"/>
+    </attribute>
+    <attribute id="BANKN" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BANKN"/>
+      <keyMapping columnObjectName="Join_2" columnName="BANKN"/>
+    </attribute>
+    <attribute id="BKONT" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BKONT"/>
+      <keyMapping columnObjectName="Join_2" columnName="BKONT"/>
+    </attribute>
+    <attribute id="BVTYP" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BVTYP"/>
+      <keyMapping columnObjectName="Join_2" columnName="BVTYP"/>
+    </attribute>
+    <attribute id="XEZER" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="XEZER"/>
+      <keyMapping columnObjectName="Join_2" columnName="XEZER"/>
+    </attribute>
+    <attribute id="BKREF" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BKREF"/>
+      <keyMapping columnObjectName="Join_2" columnName="BKREF"/>
+    </attribute>
+    <attribute id="KOINH" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOINH"/>
+      <keyMapping columnObjectName="Join_2" columnName="KOINH"/>
+    </attribute>
+    <attribute id="EBPP_ACCNAME" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EBPP_ACCNAME"/>
+      <keyMapping columnObjectName="Join_2" columnName="EBPP_ACCNAME"/>
+    </attribute>
+    <attribute id="EBPP_BVSTATUS" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="EBPP_BVSTATUS"/>
+      <keyMapping columnObjectName="Join_2" columnName="EBPP_BVSTATUS"/>
+    </attribute>
+    <attribute id="KOVON" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOVON"/>
+      <keyMapping columnObjectName="Join_2" columnName="KOVON"/>
+    </attribute>
+    <attribute id="KOBIS" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KOBIS"/>
+      <keyMapping columnObjectName="Join_2" columnName="KOBIS"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="110" y="448"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_LFBK" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_LFA1" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="238"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T005T" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

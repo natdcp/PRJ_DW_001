@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_A512" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Price grp/Product Hierarchy Level#1"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_A512">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_A512</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PRJ_DW_001.HDB_DW_001::Synonym_A512">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="MANDT"/>
+    </attribute>
+    <attribute id="KAPPL" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KAPPL"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="KAPPL"/>
+    </attribute>
+    <attribute id="KSCHL" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KSCHL"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="KSCHL"/>
+    </attribute>
+    <attribute id="KONDA" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KONDA"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="KONDA"/>
+    </attribute>
+    <attribute id="PRODH1" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODH1"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="PRODH1"/>
+    </attribute>
+    <attribute id="KFRST" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KFRST"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="KFRST"/>
+    </attribute>
+    <attribute id="DATBI" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATBI"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="DATBI"/>
+    </attribute>
+    <attribute id="DATAB" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATAB"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="DATAB"/>
+    </attribute>
+    <attribute id="KBSTAT" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KBSTAT"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="KBSTAT"/>
+    </attribute>
+    <attribute id="KNUMH" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KNUMH"/>
+      <keyMapping columnObjectName="Synonym_A512" columnName="KNUMH"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

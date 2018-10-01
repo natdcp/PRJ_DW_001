@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_MAPR" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Material Index for Forecast"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_MAPR">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_MAPR</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_MAKT">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_MAKT</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_T001W">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_T001W</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="textTable" languageColumn="SPRAS">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="WERKS">
+        <descriptions defaultDescription="WERKS"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="PNUM1">
+        <descriptions defaultDescription="PNUM1"/>
+      </viewAttribute>
+      <viewAttribute id="PERKZ">
+        <descriptions defaultDescription="PERKZ"/>
+      </viewAttribute>
+      <viewAttribute id="PERIV">
+        <descriptions defaultDescription="PERIV"/>
+      </viewAttribute>
+      <viewAttribute id="DATUM">
+        <descriptions defaultDescription="DATUM"/>
+      </viewAttribute>
+      <viewAttribute id="UZEIT">
+        <descriptions defaultDescription="UZEIT"/>
+      </viewAttribute>
+      <viewAttribute id="MAKTX">
+        <descriptions defaultDescription="MAKTX"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_MAPR">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WERKS" source="WERKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PNUM1" source="PNUM1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERKZ" source="PERKZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERIV" source="PERIV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATUM" source="DATUM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="UZEIT" source="UZEIT"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_MAKT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAKTX" source="MAKTX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="MATNR"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="MANDT">
+        <descriptions defaultDescription="MANDT"/>
+      </viewAttribute>
+      <viewAttribute id="WERKS">
+        <descriptions defaultDescription="WERKS"/>
+      </viewAttribute>
+      <viewAttribute id="MATNR">
+        <descriptions defaultDescription="MATNR"/>
+      </viewAttribute>
+      <viewAttribute id="PNUM1">
+        <descriptions defaultDescription="PNUM1"/>
+      </viewAttribute>
+      <viewAttribute id="PERKZ">
+        <descriptions defaultDescription="PERKZ"/>
+      </viewAttribute>
+      <viewAttribute id="PERIV">
+        <descriptions defaultDescription="PERIV"/>
+      </viewAttribute>
+      <viewAttribute id="DATUM">
+        <descriptions defaultDescription="DATUM"/>
+      </viewAttribute>
+      <viewAttribute id="UZEIT">
+        <descriptions defaultDescription="UZEIT"/>
+      </viewAttribute>
+      <viewAttribute id="MAKTX">
+        <descriptions defaultDescription="MAKTX"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WERKS" source="WERKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PNUM1" source="PNUM1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERKZ" source="PERKZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERIV" source="PERIV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATUM" source="DATUM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="UZEIT" source="UZEIT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MAKTX" source="MAKTX"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_T001W">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WERKS" source="WERKS"/>
+    </input>
+    <joinAttribute name="MANDT"/>
+    <joinAttribute name="WERKS"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_2">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MANDT"/>
+      <keyMapping columnObjectName="Join_2" columnName="MANDT"/>
+    </attribute>
+    <attribute id="WERKS" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WERKS"/>
+      <keyMapping columnObjectName="Join_2" columnName="WERKS"/>
+    </attribute>
+    <attribute id="NAME1" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME1"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAME1"/>
+    </attribute>
+    <attribute id="MATNR" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATNR"/>
+      <keyMapping columnObjectName="Join_2" columnName="MATNR"/>
+    </attribute>
+    <attribute id="MAKTX" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MAKTX"/>
+      <keyMapping columnObjectName="Join_2" columnName="MAKTX"/>
+    </attribute>
+    <attribute id="PNUM1" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PNUM1"/>
+      <keyMapping columnObjectName="Join_2" columnName="PNUM1"/>
+    </attribute>
+    <attribute id="PERKZ" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERKZ"/>
+      <keyMapping columnObjectName="Join_2" columnName="PERKZ"/>
+    </attribute>
+    <attribute id="PERIV" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERIV"/>
+      <keyMapping columnObjectName="Join_2" columnName="PERIV"/>
+    </attribute>
+    <attribute id="DATUM" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATUM"/>
+      <keyMapping columnObjectName="Join_2" columnName="DATUM"/>
+    </attribute>
+    <attribute id="UZEIT" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="UZEIT"/>
+      <keyMapping columnObjectName="Join_2" columnName="UZEIT"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="122" y="337"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_MAPR" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_MAKT" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="112" y="214"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_T001W" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

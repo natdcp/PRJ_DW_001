@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="PRJ_DW_001.HDB_DW_001::CV_MDR_ADR6" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="E-Mail Addresses (Business Address Services)"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_ADR6">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_ADR6</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_ADRC">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_ADRC</resourceUri>
+  </DataSource>
+  <DataSource id="PRJ_DW_001.HDB_DW_001::Synonym_ADRP">
+    <resourceUri>PRJ_DW_001.HDB_DW_001::Synonym_ADRP</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="CLIENT">
+        <descriptions defaultDescription="CLIENT"/>
+      </viewAttribute>
+      <viewAttribute id="ADDRNUMBER">
+        <descriptions defaultDescription="ADDRNUMBER"/>
+      </viewAttribute>
+      <viewAttribute id="PERSNUMBER">
+        <descriptions defaultDescription="PERSNUMBER"/>
+      </viewAttribute>
+      <viewAttribute id="DATE_FROM">
+        <descriptions defaultDescription="DATE_FROM"/>
+      </viewAttribute>
+      <viewAttribute id="CONSNUMBER">
+        <descriptions defaultDescription="CONSNUMBER"/>
+      </viewAttribute>
+      <viewAttribute id="FLGDEFAULT">
+        <descriptions defaultDescription="FLGDEFAULT"/>
+      </viewAttribute>
+      <viewAttribute id="FLG_NOUSE">
+        <descriptions defaultDescription="FLG_NOUSE"/>
+      </viewAttribute>
+      <viewAttribute id="HOME_FLAG">
+        <descriptions defaultDescription="HOME_FLAG"/>
+      </viewAttribute>
+      <viewAttribute id="SMTP_ADDR">
+        <descriptions defaultDescription="SMTP_ADDR"/>
+      </viewAttribute>
+      <viewAttribute id="SMTP_SRCH">
+        <descriptions defaultDescription="SMTP_SRCH"/>
+      </viewAttribute>
+      <viewAttribute id="DFT_RECEIV">
+        <descriptions defaultDescription="DFT_RECEIV"/>
+      </viewAttribute>
+      <viewAttribute id="R3_USER">
+        <descriptions defaultDescription="R3_USER"/>
+      </viewAttribute>
+      <viewAttribute id="ENCODE">
+        <descriptions defaultDescription="ENCODE"/>
+      </viewAttribute>
+      <viewAttribute id="TNEF">
+        <descriptions defaultDescription="TNEF"/>
+      </viewAttribute>
+      <viewAttribute id="VALID_FROM">
+        <descriptions defaultDescription="VALID_FROM"/>
+      </viewAttribute>
+      <viewAttribute id="VALID_TO">
+        <descriptions defaultDescription="VALID_TO"/>
+      </viewAttribute>
+      <viewAttribute id="POST_CODE3">
+        <descriptions defaultDescription="POST_CODE3"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_ADR6">
+      <mapping xsi:type="Calculation:AttributeMapping" target="CLIENT" source="CLIENT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ADDRNUMBER" source="ADDRNUMBER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERSNUMBER" source="PERSNUMBER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATE_FROM" source="DATE_FROM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CONSNUMBER" source="CONSNUMBER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FLGDEFAULT" source="FLGDEFAULT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FLG_NOUSE" source="FLG_NOUSE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HOME_FLAG" source="HOME_FLAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SMTP_ADDR" source="SMTP_ADDR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SMTP_SRCH" source="SMTP_SRCH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DFT_RECEIV" source="DFT_RECEIV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="R3_USER" source="R3_USER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ENCODE" source="ENCODE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TNEF" source="TNEF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VALID_FROM" source="VALID_FROM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VALID_TO" source="VALID_TO"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_ADRC">
+      <mapping xsi:type="Calculation:AttributeMapping" target="POST_CODE3" source="POST_CODE3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CLIENT" source="CLIENT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ADDRNUMBER" source="ADDRNUMBER"/>
+    </input>
+    <joinAttribute name="CLIENT"/>
+    <joinAttribute name="ADDRNUMBER"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="CLIENT">
+        <descriptions defaultDescription="CLIENT"/>
+      </viewAttribute>
+      <viewAttribute id="ADDRNUMBER">
+        <descriptions defaultDescription="ADDRNUMBER"/>
+      </viewAttribute>
+      <viewAttribute id="PERSNUMBER">
+        <descriptions defaultDescription="PERSNUMBER"/>
+      </viewAttribute>
+      <viewAttribute id="DATE_FROM">
+        <descriptions defaultDescription="DATE_FROM"/>
+      </viewAttribute>
+      <viewAttribute id="CONSNUMBER">
+        <descriptions defaultDescription="CONSNUMBER"/>
+      </viewAttribute>
+      <viewAttribute id="FLGDEFAULT">
+        <descriptions defaultDescription="FLGDEFAULT"/>
+      </viewAttribute>
+      <viewAttribute id="FLG_NOUSE">
+        <descriptions defaultDescription="FLG_NOUSE"/>
+      </viewAttribute>
+      <viewAttribute id="HOME_FLAG">
+        <descriptions defaultDescription="HOME_FLAG"/>
+      </viewAttribute>
+      <viewAttribute id="SMTP_ADDR">
+        <descriptions defaultDescription="SMTP_ADDR"/>
+      </viewAttribute>
+      <viewAttribute id="SMTP_SRCH">
+        <descriptions defaultDescription="SMTP_SRCH"/>
+      </viewAttribute>
+      <viewAttribute id="DFT_RECEIV">
+        <descriptions defaultDescription="DFT_RECEIV"/>
+      </viewAttribute>
+      <viewAttribute id="R3_USER">
+        <descriptions defaultDescription="R3_USER"/>
+      </viewAttribute>
+      <viewAttribute id="ENCODE">
+        <descriptions defaultDescription="ENCODE"/>
+      </viewAttribute>
+      <viewAttribute id="TNEF">
+        <descriptions defaultDescription="TNEF"/>
+      </viewAttribute>
+      <viewAttribute id="VALID_FROM">
+        <descriptions defaultDescription="VALID_FROM"/>
+      </viewAttribute>
+      <viewAttribute id="VALID_TO">
+        <descriptions defaultDescription="VALID_TO"/>
+      </viewAttribute>
+      <viewAttribute id="POST_CODE3">
+        <descriptions defaultDescription="POST_CODE3"/>
+      </viewAttribute>
+      <viewAttribute id="NAME1">
+        <descriptions defaultDescription="NAME1"/>
+      </viewAttribute>
+      <viewAttribute id="NAME_FIRST">
+        <descriptions defaultDescription="NAME_FIRST"/>
+      </viewAttribute>
+      <viewAttribute id="NAME_LAST">
+        <descriptions defaultDescription="NAME_LAST"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="CLIENT" source="CLIENT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ADDRNUMBER" source="ADDRNUMBER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERSNUMBER" source="PERSNUMBER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATE_FROM" source="DATE_FROM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CONSNUMBER" source="CONSNUMBER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FLGDEFAULT" source="FLGDEFAULT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FLG_NOUSE" source="FLG_NOUSE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HOME_FLAG" source="HOME_FLAG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SMTP_ADDR" source="SMTP_ADDR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SMTP_SRCH" source="SMTP_SRCH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DFT_RECEIV" source="DFT_RECEIV"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="R3_USER" source="R3_USER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ENCODE" source="ENCODE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TNEF" source="TNEF"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VALID_FROM" source="VALID_FROM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VALID_TO" source="VALID_TO"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="POST_CODE3" source="POST_CODE3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME1" source="NAME1"/>
+    </input>
+    <input node="PRJ_DW_001.HDB_DW_001::Synonym_ADRP">
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME_FIRST" source="NAME_FIRST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAME_LAST" source="NAME_LAST"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CLIENT" source="CLIENT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PERSNUMBER" source="PERSNUMBER"/>
+    </input>
+    <joinAttribute name="CLIENT"/>
+    <joinAttribute name="PERSNUMBER"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_2">
+  <attributes>
+    <attribute id="CLIENT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CLIENT"/>
+      <keyMapping columnObjectName="Join_2" columnName="CLIENT"/>
+    </attribute>
+    <attribute id="ADDRNUMBER" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADDRNUMBER"/>
+      <keyMapping columnObjectName="Join_2" columnName="ADDRNUMBER"/>
+    </attribute>
+    <attribute id="NAME1" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADDRESS"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAME1"/>
+    </attribute>
+    <attribute id="PERSNUMBER" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PERSNUMBER"/>
+      <keyMapping columnObjectName="Join_2" columnName="PERSNUMBER"/>
+    </attribute>
+    <attribute id="NAME_FIRST" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FIRST NAME"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAME_FIRST"/>
+    </attribute>
+    <attribute id="NAME_LAST" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAST NAME"/>
+      <keyMapping columnObjectName="Join_2" columnName="NAME_LAST"/>
+    </attribute>
+    <attribute id="DATE_FROM" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DATE_FROM"/>
+      <keyMapping columnObjectName="Join_2" columnName="DATE_FROM"/>
+    </attribute>
+    <attribute id="CONSNUMBER" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CONSNUMBER"/>
+      <keyMapping columnObjectName="Join_2" columnName="CONSNUMBER"/>
+    </attribute>
+    <attribute id="FLGDEFAULT" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FLGDEFAULT"/>
+      <keyMapping columnObjectName="Join_2" columnName="FLGDEFAULT"/>
+    </attribute>
+    <attribute id="FLG_NOUSE" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FLG_NOUSE"/>
+      <keyMapping columnObjectName="Join_2" columnName="FLG_NOUSE"/>
+    </attribute>
+    <attribute id="HOME_FLAG" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HOME_FLAG"/>
+      <keyMapping columnObjectName="Join_2" columnName="HOME_FLAG"/>
+    </attribute>
+    <attribute id="SMTP_ADDR" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SMTP_ADDR"/>
+      <keyMapping columnObjectName="Join_2" columnName="SMTP_ADDR"/>
+    </attribute>
+    <attribute id="SMTP_SRCH" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SMTP_SRCH"/>
+      <keyMapping columnObjectName="Join_2" columnName="SMTP_SRCH"/>
+    </attribute>
+    <attribute id="DFT_RECEIV" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DFT_RECEIV"/>
+      <keyMapping columnObjectName="Join_2" columnName="DFT_RECEIV"/>
+    </attribute>
+    <attribute id="R3_USER" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="R3_USER"/>
+      <keyMapping columnObjectName="Join_2" columnName="R3_USER"/>
+    </attribute>
+    <attribute id="ENCODE" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENCODE"/>
+      <keyMapping columnObjectName="Join_2" columnName="ENCODE"/>
+    </attribute>
+    <attribute id="TNEF" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TNEF"/>
+      <keyMapping columnObjectName="Join_2" columnName="TNEF"/>
+    </attribute>
+    <attribute id="VALID_FROM" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VALID_FROM"/>
+      <keyMapping columnObjectName="Join_2" columnName="VALID_FROM"/>
+    </attribute>
+    <attribute id="VALID_TO" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VALID_TO"/>
+      <keyMapping columnObjectName="Join_2" columnName="VALID_TO"/>
+    </attribute>
+    <attribute id="POST_CODE3" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="POST_CODE3"/>
+      <keyMapping columnObjectName="Join_2" columnName="POST_CODE3"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="308"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_ADR6" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_ADRC" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="80" y="184"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="PRJ_DW_001.HDB_DW_001::Synonym_ADRP" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

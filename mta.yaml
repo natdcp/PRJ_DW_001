@@ -1,0 +1,30 @@
+ID: PRJ_DW_001
+_schema-version: '2.0'
+description: PRJ_DW_001
+version: 0.0.1
+
+modules:
+ - name: HDB_DW_001
+   type: hdb
+   path: HDB_DW_001
+   requires:
+    - name: hdi_HDB_DW_001
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name}
+    - name: DTD_HANA_REMOTE
+    - name: DTD_MANHATTAN_REMOTE
+    - name: DTD_PEOPLENET_REMOTE    
+resources:
+ - name: hdi_HDB_DW_001
+   parameters:
+      config:
+         schema: HDB_DW_001_SCHEMA
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+ - name: DTD_HANA_REMOTE
+   type: org.cloudfoundry.existing-service
+ - name: DTD_MANHATTAN_REMOTE
+   type: org.cloudfoundry.existing-service
+ - name: DTD_PEOPLENET_REMOTE
+   type: org.cloudfoundry.existing-service
